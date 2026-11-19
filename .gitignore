@@ -1,0 +1,4 @@
+.env*
+saved/
+.vercel
+node_modules

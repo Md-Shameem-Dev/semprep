@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SemPrep — Semester Exam Guides</title>
+  <meta name="description" content="Pick your course, year, semester and subject to get a previous-year-paper study guide: top questions, unit-wise topics, predictions and revision lists." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="icon" type="image/png" sizes="192x192" href="icons/icon-192.png" />
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png" />
+  <meta name="theme-color" content="#0b0d12" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <a href="#/" class="brand"><span class="brand-mark">S</span>SemPrep</a>
+    <nav class="topnav">
+      <a href="#/" data-nav="home">Dashboard</a>
+      <a href="#/guides" data-nav="guides">My Guides <span class="nav-count" id="guideCount" hidden></span></a>
+      <a href="#/analyzer" data-nav="analyzer">Analyzer</a>
+      <a href="#/settings" data-nav="settings">Settings</a>
+    </nav>
+    <span class="net-pill" id="netPill" hidden>Offline</span>
+    <button class="btn install-btn" id="installBtn" hidden>Install app</button>
+    <button class="theme-btn" id="themeBtn" aria-label="Toggle light/dark theme">◐</button>
+  </header>
+
+  <main id="app" tabindex="-1"></main>
+
+  <footer class="foot">
+    Built to help students prepare for semester exams. Question papers belong to their institutions.
+  </footer>
+
+  <script src="data/srm-2021.js"></script>
+  <script src="data/helper-subjects.js"></script>
+  <script src="data/catalog.js"></script>
+  <script src="lib/gen.js"></script>
+  <script src="data/guides/srm-21csc204j.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

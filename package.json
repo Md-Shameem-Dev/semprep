@@ -1,0 +1,11 @@
+{
+  "name": "semprep",
+  "private": true,
+  "type": "module",
+  "description": "Pick course, year, semester and subject; get a past-paper exam study guide.",
+  "scripts": {
+    "start": "node server.mjs",
+    "import:srm": "node tools/import-srm-helper.mjs"
+  },
+  "engines": { "node": ">=20" }
+}
