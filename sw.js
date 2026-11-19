@@ -12,10 +12,11 @@
  *    and downloaded PDFs. Your guides are not stored here; they live in the
  *    page's own storage (and saved/store.json on this computer).
  */
-const VERSION = "semprep-v1";
+const VERSION = "semprep-v2";
 const SHELL = [
   "./", "index.html", "styles.css", "app.js", "lib/gen.js", "manifest.webmanifest",
   "data/srm-2021.js", "data/helper-subjects.js", "data/catalog.js", "data/guides/srm-21csc204j.js",
+  "data/guides/gen-21csc301t.js", "data/guides/gen-discrete-mathematics.js",
   "icons/icon-192.png", "icons/icon-512.png", "icons/apple-touch-icon.png"
 ];
 

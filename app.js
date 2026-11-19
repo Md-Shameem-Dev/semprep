@@ -156,7 +156,7 @@
 
   const allGuideEntries = () => [
     ...Object.keys(S.guides).filter((id) => !hiddenGuides().includes(id)).map((id) => { const g = S.guides[id]; return { id, code: g.code, name: g.name, builtin: true, basis: "papers", at: "" }; }),
-    ...guideIndex().filter((g) => getGuide(g.id))
+    ...guideIndex().filter((g) => !S.guides[g.id] && getGuide(g.id))
   ];
   function updateGuideCount() {
     const $c = document.getElementById("guideCount"); if (!$c) return;
@@ -492,6 +492,7 @@
       fetch(`api/helper?sem=${subject.helper.sem}&subject=${encodeURIComponent(subject.helper.name)}`, { signal: AbortSignal.timeout(90000) })
         .then(async (r) => {
           const j = await r.json().catch(() => null);
+          if (r.status === 404 || r.status === 405) throw new Error("this copy of SemPrep has no server, so papers can't be fetched automatically. Run it on your PC with the SemPrep shortcut for that");
           if (!r.ok || !j) throw new Error(j && j.message ? j.message : r.status === 503 ? "you're offline" : `error ${r.status}`);
           return j;
         })

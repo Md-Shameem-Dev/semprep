@@ -10,7 +10,7 @@ window.SEMPREP = window.SEMPREP || { guides: {} };
 (function () {
   const S = window.SEMPREP;
 
-  S.builtinGuides = { "21CSC204J": "srm-21csc204j" };
+  S.builtinGuides = { "21CSC204J": "srm-21csc204j", "21CSC301T": "gen-21csc301t", "21MAB302T": "gen-discrete-mathematics" };
 
   const semesters = Array.from({ length: 8 }, (_, i) => i + 1);
 
