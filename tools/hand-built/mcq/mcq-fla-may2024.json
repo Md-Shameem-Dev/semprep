@@ -1,0 +1,22 @@
+{"paper":"May 2024","low":[1,4,13],"q":[
+[1,"Automata that can be used to develop a learning model and involved in decision making","Push down automata|Linear bounded automata|Finite automata|Discrete automata","C"],
+[2,"NFA with N states: DFA can have maximum of","2^N states|N/2 states|2N states|N states","A"],
+[3,"A language is regular if and only if","accepted by DFA|accepted by PDA|accepted by LBA|accepted by Turing machine","A"],
+[4,"NOT an example of a finite state machine system","Elevator mechanism|Combination locks|Traffic lights|Digital watches","B"],
+[5,"In G=(V,E,P,S) of a CFG, S represents","Accepting State|Starting Variable|Sensitive Grammar|Starting state","B"],
+[6,"A grammar with n parse trees where n>1 is called","Unambiguous|Ambiguous|Regular|Recursive","B"],
+[7,"NOT a grammar simplification procedure","Removal of epsilon productions|Removal of unit productions|Removal of useless symbols|Removal of non-reachable states","D"],
+[8,"Which is a CNF production","A→Aw|A→x|A→xw|A→Xw","B"],
+[9,"Data structure used in processing the string in a PDA","Stack|Queue|List|Array","A"],
+[10,"Most appropriate language accepted by a DPDA","Regular Expression|Context free language|Recursively enumerable|Regular grammar","B"],
+[11,"Attempt to reduce the input string to the start symbol of a grammar","Top-down parsing|Bottom-up parsing|Syntactic parsing|Hybrid parsing","B"],
+[12,"NOT a property of CFL","Kleene closure|Homomorphism|Intersection|Concatenation","C"],
+[13,"Can accept even palindrome over {a,b}","Deterministic (PDA)|Turing machine|NDFA|Linear bounded automata","B"],
+[14,"A Turing machine has","Finite memory|Infinite memory|No memory|Stack memory","B"],
+[15,"Type 0 languages are called","Recursive Enumerable (RE)|Regular expressions|Context free language|Context free grammar","A"],
+[16,"6-tuple TM (Q,X,Σ,δ,q0,F): X represents","Tape alphabet|Stack symbol|Initial state|Final state","A"],
+[17,"A problem that can be validated in polynomial time","NP problem|P problem|PCP problem|None","A"],
+[18,"Post Correspondence problem is","decidable decision problem|undecidable decision problem|not a decision problem|NP problem","B"],
+[19,"Problems in NP class have","Deterministic algorithm|Non deterministic polynomial algorithm|Non polynomial algorithm|No solution","B"],
+[20,"Subset sum problem is an ideal example of","P|NP|NP-hard|Undecidable","B"]
+]}

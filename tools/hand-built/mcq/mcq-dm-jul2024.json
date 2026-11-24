@@ -1,0 +1,22 @@
+{"paper":"Jul 2024","q":[
+[1,"Relation that is reflexive, symmetric and transitive","Poset|Equivalence relation|Identity relation|Partial order relation","B"],
+[2,"Dual of X=(B̄∩A)∪(A∩B)","X=(B̄∪A)|X=(A∩B)|X=(B̄∪A)∩(A∪B)|X=φ","C"],
+[3,"f:A→B, g:B→A (inverse pair): g∘f is","I_A|Many one|I_B|Does not exist","A"],
+[4,"A={3,4,5}, R={(x,y)|x+y>10}: R is","{(3,4),(4,5),(3,5)}|{(4,4),(4,5),(5,5)}|{(5,5)}|{∅} (empty)","D"],
+[5,"Generalised pigeonhole: n pigeons in m holes, then","n≤m|n≥m|n<m|n>m","D"],
+[6,"If √n is not rational then n is","2|4|9|16","A"],
+[7,"If a|b and b|a then |a|=","b|2b|a|b absolute","D"],
+[8,"Minimum students to be sure three are born in the same month","22|23|24|25","D"],
+[9,"Premises may be introduced at any point in derivation: called","Rule P|Rule T|Rule CP|Rule P and T","A"],
+[10,"Symbolic form of 'if Raja takes maths or English then Arun takes Hindi'","(p∨q)→r|(p∧q)→r|p∨(q→r)|p∧(q→r)","A"],
+[11,"Mathematical induction is used for statements involving only","Positive integers|Negative integers|Rational numbers|Natural numbers","A"],
+[12,"p∧(p→q) is equivalent to","q|p|p∨q|p∧q","D"],
+[13,"Every cyclic group is","Abelian|Non abelian|Sub group|Only semigroup","A"],
+[14,"Order of the group {1,−1,i,−i} under multiplication","1|2|3|4","D"],
+[15,"Code detects at most K errors iff minimum distance is at least","K−1|K+1|K|2K+1","B"],
+[16,"Hamming weight of 11010","2|3|5|1","B"],
+[17,"Number of vertices of odd degree in an undirected graph is","Even|Odd|Prime|Multiple of 3","A"],
+[18,"A tree with 50 vertices has ___ edges","47|48|49|50","C"],
+[19,"Edges in a bipartite graph with n vertices is at most","n²/2|n²/4|n²/6|n²/8","B"],
+[20,"Chromatic number of the hexagon graph","1|2|3|4","B"]
+]}

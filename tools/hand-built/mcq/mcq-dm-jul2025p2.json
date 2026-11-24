@@ -1,0 +1,22 @@
+{"paper":"Jul 2025 (Paper - 2)","q":[
+[1,"A−(B∩C) =","(A−B)∪(A−C)|(A−B)∩(A−C)|(A−B)∪(B−C)|(A−B)∩(B−C)","A"],
+[2,"Number of possible relations on a set A with n elements","2ⁿ|2ⁿ⁻¹|2ⁿ²|2ⁿ⁺¹","C"],
+[3,"R={(1,1),(2,2),(3,3)} on A={1,2,3} is","Reflexive only|Symmetric only|Transitive only|An equivalence relation","D"],
+[4,"If f and g are onto then g∘f is","One-one|Many one|Onto|Into","C"],
+[5,"Arrangements of the letters of STRESS","360|720|240|120","D"],
+[6,"If gcd(a,b)=1 then gcd(ka,kb)=","1|k|k²|2k","B"],
+[7,"Every integer n>1 is uniquely a product of","any integers|prime numbers|composite numbers|only odd integers","B"],
+[8,"36 pigeons in 4 pigeonholes: least number of pigeons in one hole","8|9|10|11","B"],
+[9,"A premise may be introduced at any step in the derivation: known as","Rule T|Rule P|Rule C|Rule CP","B"],
+[10,"p→q is logically equivalent to","¬p∨q|p∨¬q|¬p∨¬q|p∨q","A"],
+[11,"Dual of (p∧q)∨r","(p∨q)∨r|(p∧q)∧r|(p∨q)∨r (variant)|(p∨q)∧r","D"],
+[12,"(¬q∧(p→q))→¬p is a","Tautology|Contradiction|Negation|Contingency","A"],
+[13,"(a*b)⁻¹ in a group G","a⁻¹*b⁻¹|b⁻¹*a⁻¹|b*a|a*b","B"],
+[14,"α=(1234/3421), β=(1234/2431) in S₄: αβ is","(1234/1234)|(1234/3142)|(1234/4321)|(1234/3412)","B"],
+[15,"Number of identity elements in a group","0|1|2|3","B"],
+[16,"Hamming weight of x=111010","2|3|4|6","C"],
+[17,"A tree with 10 vertices has ___ edges","8|9|10|11","B"],
+[18,"A path in a connected graph is a Hamiltonian path if","includes every edge exactly once|includes every vertex exactly once|includes every edge exactly twice|includes every vertex exactly twice","B"],
+[19,"Chromatic number of complete bipartite graph K4,3","2|3|5|6","A"],
+[20,"If every vertex of a simple graph has the same degree the graph is","complete|regular|path|tree","B"]
+]}

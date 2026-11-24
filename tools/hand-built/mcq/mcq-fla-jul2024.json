@@ -1,0 +1,22 @@
+{"paper":"Jul 2024","low":[14,16],"q":[
+[1,"Genuine regular expression identity","(x+y)*=x*+y*|(x+y)*=x*y*|(x+y)*=(x*y*)*|x*y*=x*+y*","C"],
+[2,"The limitation of finite automata is","Recognize non regular grammar|Fails to recognize regular grammar|Recognize context free grammar|Cannot remember large amount of memory","D"],
+[3,"Regular expression for {x∈{0,1}* | x ends with 0 and starts with 1}","0(0*1*)*1|0(0*+1*)1|1(0*+1*)*0|1(0*+1*)0","C"],
+[4,"DFA q0-b→q0, q0-a→q1, q1-a→q1, q1-b→q2, q2-a→q1, q2-b→q0, final q2: accepts","aaabbbab|ababa|bbbaaaa|bbaaabb","A"],
+[5,"X1: X→aXb|bXa|XX|a and X→aXb|bXa|a not equivalent. X2: X→XX|XXX|aXb|bXa|ε and X→XX|aXb|bXa|ε equivalent","X1 correct, X2 not|Both not correct|X1 correct and X2 correct|Both correct (variant)","C"],
+[6,"A context sensitive grammar is","Type 0|Type 1|Type 2|Type 3","B"],
+[7,"All productions have a single non terminal on the left side: grammar is","Context Sensitive Grammar|Context Free Grammar|Unrestricted Grammar|Pharser Grammar","B"],
+[8,"General format of Chomsky Normal Form","A→aB|a|X→YZ|d|X→ABC|ac|A→aXY|a","B"],
+[9,"Push Down Automata does not have","Finite set of input symbols|Starting state|Special rejection state|Transition function","C"],
+[10,"A Deterministic PDA is a PDA with","No state p has two or more outgoing transitions on same input and stack symbol|No state p has two or more outgoing transitions|More than one state can have two or more outgoing transitions|At least one state has more than one transition","A"],
+[11,"PDA configuration (q0,a,b) represents","(Current State, Input, Stack symbol)|(Current State, Stack symbol, Input)|(Next State, Input, Stack symbol)|(Next State, Stack symbol, Input)","A"],
+[12,"Push Down Automata with two stacks is equivalent to","Deterministic FA|Epsilon NFA|Turing Machine|Non Deterministic FA","C"],
+[13,"In a multi head Turing machine there are","More than one heads|More than one input tapes|Similar to basic TM|Multiple tracks in the input tape","A"],
+[14,"An instantaneous description of a Turing machine consists of","Current state and entire input to be processed|Current state and processed input|Next state and already processed input|Next state and entire input to be processed","A"],
+[15,"Number of tuples used to represent a Turing Machine","5|6|7|8","C"],
+[16,"Tape after processing '10110' by TM with δ(q0,1)=(q1,a,R), δ(q1,0)=(qaccept,b,R)","ab110|10bba|10110|abbba","A"],
+[17,"If L and L' are recursively enumerable then L is","Regular|Recursive|Context free|Context Sensitive","B"],
+[18,"Relationship among RE, CS, RL and CFL","CFL⊂CS⊂RL⊂RE|CFL⊂CS⊂RE⊂RL|RE⊂RL⊂CS⊂CFL|RL⊂RE⊂CS⊂CFL","A"],
+[19,"Select the FALSE statement","All Context Sensitive Languages are Recursive|The non-Recursively Enumerable language set is countable|RE and Recursive languages are closed under Reversal|RE languages are closed under Union","B"],
+[20,"A decidable, B not decidable: correct option","C undecidable if C reducible to B|C undecidable if B is reducible to C|C decidable if A is reducible to C|C decidable if C reducible to B's complement","B"]
+]}

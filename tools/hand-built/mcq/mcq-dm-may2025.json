@@ -1,0 +1,22 @@
+{"paper":"May 2025","q":[
+[1,"Power set of {a,{b}}","{∅,{a},{{b}},{a,{b}}}|{∅,{a},{b},{a,{b}}}|{∅,{{b}},{a,{b}}}|{∅,{a},{{b}}}","A"],
+[2,"P={1,{2},4}, Q={1,2,4}","P=Q|Q⊆P|P≠Q|P⊆Q","C"],
+[3,"A={3,4,5}, R={(x,y)|x+y>10} on A is","{(3,4),(4,5),(3,5)}|A|∅|{(3,4),(4,5)}","C"],
+[4,"f(x)=2x+3, g(x)=3x+2: f∘g is","3x+7|6x+7|6x+11|3x+11","B"],
+[5,"10 points, no three collinear except 4 which are collinear: number of lines","20|30|40|50","C"],
+[6,"n pigeonholes, n+1 pigeons: some hole holds","One pigeon|Two pigeons (at least)|Three|Four","B"],
+[7,"gcd(a,b) for non-zero integers is","mn+ab|ma+nb|abmn|ab divides mn","B"],
+[8,"If a=qb+r then","gcd(a,r)=gcd(b,r)|gcd(a,b)=gcd(a,r)|gcd(a,r)=gcd(q,r)|gcd(a,b)=gcd(b,r)","D"],
+[9,"A premise may be introduced at any point in the derivation: called","Rule P|Rule P and Rule T|Rule T|Rule CP","A"],
+[10,"Dual of (P∧Q)∨T","(P∧Q)∧T|(P∧Q)∧T'|(P∨Q)∧F|(P∧Q)∨F","C"],
+[11,"Inverse of q→p (printed; options: p→q | ¬p→¬q | ¬q→p | ¬p→q)","p→q|¬p→¬q|¬q→p|¬p→q","B"],
+[12,"Which proposition is a tautology","(p∨q)→p|p∨(q→p)|p∨(p→q)|p→(p→q)","C"],
+[13,"Order of the element i in G={1,−1,i,−i} under multiplication","1|2|3|4","D"],
+[14,"Inverse of p=(a b c / b c a) in S₃","(a b c / c a b)|(a b c / a c b)|(a b c / b c a)|(a b c / b a c)","A"],
+[15,"Subgroup of (R,+) is","(R,−)|(Q,•)|(Z⁺,+)|(Z,+)","D"],
+[16,"Inverse of a in (G,*) with a*b=a+b+2","−a|−(a+4)|−2|−4","B"],
+[17,"Chromatic number of the hexagon (cycle C6)","1|2|3|4","B"],
+[18,"_____ graphs satisfy invariant property","Homomorphic|Eulerian|Isomorphic|Hamiltonian","C"],
+[19,"A connected graph without any circuit is called","Loop|Tree|Leaf|Forest","B"],
+[20,"A vertex not adjacent to every other vertex is called ____ vertex (as printed)","Isolated|Pendant|Incident|Simple","A"]
+]}

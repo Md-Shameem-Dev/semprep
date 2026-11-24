@@ -2568,5 +2568,2609 @@ window.SEMPREP.guides["gen-discrete-mathematics"] = {
       "PYQ Nov 2025",
       "PYQ May 2026"
     ]
+  },
+  "mcq": {
+    "papers": [
+      "PYQ May 2024",
+      "PYQ Jul 2024",
+      "PYQ Nov 2024",
+      "PYQ May 2025",
+      "PYQ Jul 2025",
+      "PYQ Jul 2025 (Paper - 2)",
+      "PYQ Nov 2025",
+      "PYQ May 2026"
+    ],
+    "units": [
+      "Sets, relations, functions",
+      "Counting and number theory",
+      "Logic and proof",
+      "Groups and coding",
+      "Graphs"
+    ],
+    "questions": [
+      {
+        "p": 7,
+        "n": 1,
+        "q": "U={1..10}, A={1,2,3,4,5}, B={1,2,4,8}, C={1,2,3,5,7}, D={2,4,6,8}: (B−C)−D is",
+        "o": [
+          "{2,4,8}",
+          "∅",
+          "{4,8}",
+          "{1,2,3,5}"
+        ],
+        "a": 1,
+        "unit": 1,
+        "fam": "G23"
+      },
+      {
+        "p": 7,
+        "n": 2,
+        "q": "Reflexive closure of R={(1,1),(1,3),(2,1),(3,3)} on {1,2,3}",
+        "o": [
+          "{(1,1),(1,2),(1,3),(3,1),(2,1),(3,3)}",
+          "{(1,1),(1,3),(2,1),(3,1),(3,3)}",
+          "{(1,1),(1,3),(2,1),(2,2),(3,3)}",
+          "{(1,1),(1,3),(2,1),(3,2),(3,3)}"
+        ],
+        "a": 2,
+        "unit": 1,
+        "fam": "G18"
+      },
+      {
+        "p": 7,
+        "n": 3,
+        "q": "Every partition of a set determines",
+        "o": [
+          "a function",
+          "a permutation",
+          "an equivalence relation",
+          "a bijection"
+        ],
+        "a": 2,
+        "unit": 1,
+        "fam": "G18"
+      },
+      {
+        "p": 7,
+        "n": 4,
+        "q": "In a Hasse diagram the reflexive and transitive edges are",
+        "o": [
+          "explicitly drawn",
+          "dotted",
+          "omitted",
+          "coloured"
+        ],
+        "a": 2,
+        "unit": 5
+      },
+      {
+        "p": 7,
+        "n": 5,
+        "q": "Arrangements of the six letters of PEPPER",
+        "o": [
+          "720",
+          "360",
+          "120",
+          "60"
+        ],
+        "a": 3,
+        "unit": 2,
+        "fam": "G14"
+      },
+      {
+        "p": 7,
+        "n": 6,
+        "q": "The number of prime numbers is",
+        "o": [
+          "finite",
+          "infinite",
+          "equal to number of even numbers",
+          "100"
+        ],
+        "a": 1,
+        "unit": 2,
+        "fam": "G13"
+      },
+      {
+        "p": 7,
+        "n": 7,
+        "q": "If gcd(a,b)=1 then for any integer c",
+        "o": [
+          "gcd(ac,b)=gcd(c,b)",
+          "gcd(ac,b)=gcd(a,b)",
+          "gcd(ac,b)=c·gcd(a,b)",
+          "gcd(ac,b)=−gcd(c,b)"
+        ],
+        "a": 0,
+        "unit": 2,
+        "fam": "G12"
+      },
+      {
+        "p": 7,
+        "n": 8,
+        "q": "Every integer n>1 is a unique product of primes: this is",
+        "o": [
+          "Euclid lemma",
+          "Division algorithm",
+          "Fundamental theorem of arithmetic",
+          "Divisibility rule"
+        ],
+        "a": 2,
+        "unit": 2,
+        "fam": "G13"
+      },
+      {
+        "p": 7,
+        "n": 9,
+        "q": "(p→¬p)→¬p is",
+        "o": [
+          "Tautology",
+          "Contradiction",
+          "Duality",
+          "Equivalence"
+        ],
+        "a": 0,
+        "unit": 3,
+        "fam": "G2"
+      },
+      {
+        "p": 7,
+        "n": 10,
+        "q": "Absorption law",
+        "o": [
+          "p∨(p∧q)≡p",
+          "p∨p≡p",
+          "p∨T≡T",
+          "¬p∨(p∧q)≡p"
+        ],
+        "a": 0,
+        "unit": 3,
+        "fam": "G24"
+      },
+      {
+        "p": 7,
+        "n": 11,
+        "q": "Rules of inference used to draw a conclusion from premises in finite steps is called",
+        "o": [
+          "A proposition",
+          "Argument",
+          "Tautology",
+          "Formal proof"
+        ],
+        "a": 3,
+        "unit": 3,
+        "low": 1,
+        "fam": "G24"
+      },
+      {
+        "p": 7,
+        "n": 12,
+        "q": "Which is NOT a direct proof technique",
+        "o": [
+          "Algebraic manipulation",
+          "Logical deduction",
+          "Proof by contradiction",
+          "Applying definitions"
+        ],
+        "a": 2,
+        "unit": 3,
+        "fam": "G24"
+      },
+      {
+        "p": 7,
+        "n": 13,
+        "q": "Identity element in a permutation group",
+        "o": [
+          "The transposition",
+          "The cycle",
+          "The permutation leaving every element fixed",
+          "The inverse permutation"
+        ],
+        "a": 2,
+        "unit": 4,
+        "fam": "G11"
+      },
+      {
+        "p": 7,
+        "n": 14,
+        "q": "Commutative ring with unity and no zero divisors",
+        "o": [
+          "Field",
+          "Integral domain",
+          "Group",
+          "Module"
+        ],
+        "a": 1,
+        "unit": 4,
+        "fam": "G20"
+      },
+      {
+        "p": 7,
+        "n": 15,
+        "q": "Codes got by adding parity digits to the message digits",
+        "o": [
+          "Cyclic codes",
+          "Linear block codes",
+          "Hamming codes",
+          "Convolutional codes"
+        ],
+        "a": 1,
+        "unit": 4,
+        "low": 1,
+        "fam": "G22"
+      },
+      {
+        "p": 7,
+        "n": 16,
+        "q": "Every subgroup of a cyclic group is",
+        "o": [
+          "non-cyclic",
+          "cyclic",
+          "infinite",
+          "normal only"
+        ],
+        "a": 1,
+        "unit": 4,
+        "fam": "G10"
+      },
+      {
+        "p": 7,
+        "n": 17,
+        "q": "Handshaking theorem applies to",
+        "o": [
+          "Directed graphs only",
+          "Undirected graphs",
+          "Weighted graphs only",
+          "Trees only"
+        ],
+        "a": 1,
+        "unit": 5,
+        "fam": "G16"
+      },
+      {
+        "p": 7,
+        "n": 18,
+        "q": "A circuit is",
+        "o": [
+          "a path with no repeated vertices",
+          "a closed walk with no repeated edges",
+          "a graph with one vertex",
+          "a complete graph"
+        ],
+        "a": 1,
+        "unit": 5,
+        "fam": "G15"
+      },
+      {
+        "p": 7,
+        "n": 19,
+        "q": "Which graph is NOT Eulerian",
+        "o": [
+          "A cycle graph",
+          "Complete graph with odd number of vertices",
+          "A tree with more than two vertices",
+          "Graph with all degrees 4"
+        ],
+        "a": 2,
+        "unit": 5,
+        "fam": "G15"
+      },
+      {
+        "p": 7,
+        "n": 20,
+        "q": "Graph colourable with two colours",
+        "o": [
+          "Complete",
+          "Bipartite",
+          "Regular",
+          "Eulerian"
+        ],
+        "a": 1,
+        "unit": 5,
+        "fam": "G6"
+      },
+      {
+        "p": 6,
+        "n": 1,
+        "q": "Relation R={(1,2),(2,3),(1,3)} on {1,2,3} is",
+        "o": [
+          "Transitive",
+          "Symmetric but not anti-symmetric",
+          "Reflexive and transitive",
+          "Reflexive and symmetric"
+        ],
+        "a": 0,
+        "unit": 1,
+        "fam": "G18"
+      },
+      {
+        "p": 6,
+        "n": 2,
+        "q": "f(x)=2x+3, g(x)=x²: (f∘g)(x) equals",
+        "o": [
+          "(2x+3)²",
+          "2(x+3)²",
+          "2x²+3",
+          "2x²+9"
+        ],
+        "a": 2,
+        "unit": 1,
+        "fam": "G19"
+      },
+      {
+        "p": 6,
+        "n": 3,
+        "q": "f:N→N, f(x)=x+5 is",
+        "o": [
+          "Injective but not surjective",
+          "Surjective but not injective",
+          "Bijective",
+          "Neither"
+        ],
+        "a": 0,
+        "unit": 3,
+        "fam": "G19"
+      },
+      {
+        "p": 6,
+        "n": 4,
+        "q": "Relation with matrix [[1,1,0],[1,1,0],[0,0,1]] is",
+        "o": [
+          "Reflexive and symmetric, not transitive",
+          "Reflexive and transitive, not symmetric",
+          "Reflexive, symmetric and transitive",
+          "Not reflexive"
+        ],
+        "a": 2,
+        "unit": 1,
+        "fam": "G18"
+      },
+      {
+        "p": 6,
+        "n": 5,
+        "q": "7-letter words from SUCCESS",
+        "o": [
+          "7!/(3!2!2!)",
+          "7!/(3!2!)",
+          "7!/(2!2!)",
+          "7!/(4!2!)"
+        ],
+        "a": 1,
+        "unit": 2,
+        "fam": "G14"
+      },
+      {
+        "p": 6,
+        "n": 6,
+        "q": "10 people at a round table, 4 men together",
+        "o": [
+          "4!5!",
+          "4!6!",
+          "6!5!",
+          "7!4!"
+        ],
+        "a": 1,
+        "unit": 2,
+        "fam": "G14"
+      },
+      {
+        "p": 6,
+        "n": 7,
+        "q": "Grades A–F: minimum students to guarantee 7 get the same grade",
+        "o": [
+          "30",
+          "32",
+          "31",
+          "35"
+        ],
+        "a": 2,
+        "unit": 2,
+        "fam": "G5"
+      },
+      {
+        "p": 6,
+        "n": 8,
+        "q": "gcd(72,x)=36 and lcm(72,x)=216: x",
+        "o": [
+          "48",
+          "72",
+          "144",
+          "108"
+        ],
+        "a": 3,
+        "unit": 2,
+        "fam": "G12"
+      },
+      {
+        "p": 6,
+        "n": 9,
+        "q": "'It is not true that both Anna and Bob attend' is equivalent to",
+        "o": [
+          "Anna not attending or Bob not attending",
+          "Anna not and Bob not",
+          "If Anna attends then Bob does not",
+          "Anna attends but Bob does not"
+        ],
+        "a": 0,
+        "unit": 1,
+        "fam": "G24"
+      },
+      {
+        "p": 6,
+        "n": 10,
+        "q": "Inverse of 'I come to class whenever there is going to be a quiz'",
+        "o": [
+          "If I do not come, there is no quiz",
+          "If no quiz, I do not come",
+          "If I come, there is a quiz",
+          "If there is a quiz, I come"
+        ],
+        "a": 0,
+        "unit": 3,
+        "fam": "G3"
+      },
+      {
+        "p": 6,
+        "n": 11,
+        "q": "Rule of inference: colder or pollution harmful; it is hotter; so pollution harmful",
+        "o": [
+          "Conjunction",
+          "Modus ponens",
+          "Disjunctive syllogism",
+          "Hypothetical syllogism"
+        ],
+        "a": 2,
+        "unit": 3,
+        "fam": "G24"
+      },
+      {
+        "p": 6,
+        "n": 12,
+        "q": "In the inductive step of induction we assume",
+        "o": [
+          "true for base case n=1",
+          "false for all n",
+          "true for some arbitrary n=k",
+          "true for n=k+1"
+        ],
+        "a": 2,
+        "unit": 3,
+        "fam": "G21"
+      },
+      {
+        "p": 6,
+        "n": 13,
+        "q": "Non-empty H ⊆ G is a subgroup if for all a,b∈H",
+        "o": [
+          "ab∈H",
+          "ab⁻¹∈H",
+          "a²b∈H",
+          "a+b∈H"
+        ],
+        "a": 1,
+        "unit": 4
+      },
+      {
+        "p": 6,
+        "n": 14,
+        "q": "Order of the symmetric group Sₙ",
+        "o": [
+          "n",
+          "n²",
+          "n!",
+          "2ⁿ"
+        ],
+        "a": 2,
+        "unit": 4
+      },
+      {
+        "p": 6,
+        "n": 15,
+        "q": "An integral domain is a",
+        "o": [
+          "Ring with unity, commutative, no zero divisors",
+          "Ring without identity",
+          "Ring where every nonzero element has no inverse",
+          "Non-commutative ring"
+        ],
+        "a": 0,
+        "unit": 4,
+        "fam": "G20"
+      },
+      {
+        "p": 6,
+        "n": 16,
+        "q": "Code with d_min=5 corrects how many errors",
+        "o": [
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "a": 1,
+        "unit": 4,
+        "fam": "G22"
+      },
+      {
+        "p": 6,
+        "n": 17,
+        "q": "A connected graph has an Eulerian circuit iff",
+        "o": [
+          "every vertex odd degree",
+          "exactly two odd vertices",
+          "every vertex even degree",
+          "it is complete"
+        ],
+        "a": 2,
+        "unit": 5,
+        "fam": "G15"
+      },
+      {
+        "p": 6,
+        "n": 18,
+        "q": "Edges in complete graph K9",
+        "o": [
+          "10",
+          "20",
+          "25",
+          "36"
+        ],
+        "a": 3,
+        "unit": 5,
+        "fam": "G17"
+      },
+      {
+        "p": 6,
+        "n": 19,
+        "q": "Minimum colours so adjacent vertices differ is",
+        "o": [
+          "Degree",
+          "Chromatic number",
+          "Clique number",
+          "Spanning number"
+        ],
+        "a": 1,
+        "unit": 5,
+        "fam": "G6"
+      },
+      {
+        "p": 6,
+        "n": 20,
+        "q": "A tree is always",
+        "o": [
+          "Disconnected",
+          "Connected and acyclic",
+          "Disconnected and cyclic",
+          "Connected and cyclic"
+        ],
+        "a": 1,
+        "unit": 5,
+        "fam": "G7"
+      },
+      {
+        "p": 5,
+        "n": 1,
+        "q": "A−(B∩C) =",
+        "o": [
+          "(A−B)∪(A−C)",
+          "(A−B)∩(A−C)",
+          "(A−B)∪(B−C)",
+          "(A−B)∩(B−C)"
+        ],
+        "a": 0,
+        "unit": 1,
+        "fam": "G23"
+      },
+      {
+        "p": 5,
+        "n": 2,
+        "q": "Number of possible relations on a set A with n elements",
+        "o": [
+          "2ⁿ",
+          "2ⁿ⁻¹",
+          "2ⁿ²",
+          "2ⁿ⁺¹"
+        ],
+        "a": 2,
+        "unit": 1
+      },
+      {
+        "p": 5,
+        "n": 3,
+        "q": "R={(1,1),(2,2),(3,3)} on A={1,2,3} is",
+        "o": [
+          "Reflexive only",
+          "Symmetric only",
+          "Transitive only",
+          "An equivalence relation"
+        ],
+        "a": 3,
+        "unit": 1,
+        "fam": "G18"
+      },
+      {
+        "p": 5,
+        "n": 4,
+        "q": "If f and g are onto then g∘f is",
+        "o": [
+          "One-one",
+          "Many one",
+          "Onto",
+          "Into"
+        ],
+        "a": 2,
+        "unit": 1,
+        "fam": "G19"
+      },
+      {
+        "p": 5,
+        "n": 5,
+        "q": "Arrangements of the letters of STRESS",
+        "o": [
+          "360",
+          "720",
+          "240",
+          "120"
+        ],
+        "a": 3,
+        "unit": 2,
+        "fam": "G14"
+      },
+      {
+        "p": 5,
+        "n": 6,
+        "q": "If gcd(a,b)=1 then gcd(ka,kb)=",
+        "o": [
+          "1",
+          "k",
+          "k²",
+          "2k"
+        ],
+        "a": 1,
+        "unit": 2,
+        "fam": "G12"
+      },
+      {
+        "p": 5,
+        "n": 7,
+        "q": "Every integer n>1 is uniquely a product of",
+        "o": [
+          "any integers",
+          "prime numbers",
+          "composite numbers",
+          "only odd integers"
+        ],
+        "a": 1,
+        "unit": 2,
+        "fam": "G13"
+      },
+      {
+        "p": 5,
+        "n": 8,
+        "q": "36 pigeons in 4 pigeonholes: least number of pigeons in one hole",
+        "o": [
+          "8",
+          "9",
+          "10",
+          "11"
+        ],
+        "a": 1,
+        "unit": 2,
+        "fam": "G5"
+      },
+      {
+        "p": 5,
+        "n": 9,
+        "q": "A premise may be introduced at any step in the derivation: known as",
+        "o": [
+          "Rule T",
+          "Rule P",
+          "Rule C",
+          "Rule CP"
+        ],
+        "a": 1,
+        "unit": 3,
+        "fam": "G9"
+      },
+      {
+        "p": 5,
+        "n": 10,
+        "q": "p→q is logically equivalent to",
+        "o": [
+          "¬p∨q",
+          "p∨¬q",
+          "¬p∨¬q",
+          "p∨q"
+        ],
+        "a": 0,
+        "unit": 3,
+        "fam": "G24"
+      },
+      {
+        "p": 5,
+        "n": 11,
+        "q": "Dual of (p∧q)∨r",
+        "o": [
+          "(p∨q)∨r",
+          "(p∧q)∧r",
+          "(p∨q)∨r (variant)",
+          "(p∨q)∧r"
+        ],
+        "a": 3,
+        "unit": 3,
+        "fam": "G1"
+      },
+      {
+        "p": 5,
+        "n": 12,
+        "q": "(¬q∧(p→q))→¬p is a",
+        "o": [
+          "Tautology",
+          "Contradiction",
+          "Negation",
+          "Contingency"
+        ],
+        "a": 0,
+        "unit": 3,
+        "fam": "G2"
+      },
+      {
+        "p": 5,
+        "n": 13,
+        "q": "(a*b)⁻¹ in a group G",
+        "o": [
+          "a⁻¹*b⁻¹",
+          "b⁻¹*a⁻¹",
+          "b*a",
+          "a*b"
+        ],
+        "a": 1,
+        "unit": 4,
+        "fam": "G11"
+      },
+      {
+        "p": 5,
+        "n": 14,
+        "q": "α=(1234/3421), β=(1234/2431) in S₄: αβ is",
+        "o": [
+          "(1234/1234)",
+          "(1234/3142)",
+          "(1234/4321)",
+          "(1234/3412)"
+        ],
+        "a": 1,
+        "unit": 4
+      },
+      {
+        "p": 5,
+        "n": 15,
+        "q": "Number of identity elements in a group",
+        "o": [
+          "0",
+          "1",
+          "2",
+          "3"
+        ],
+        "a": 1,
+        "unit": 4,
+        "fam": "G11"
+      },
+      {
+        "p": 5,
+        "n": 16,
+        "q": "Hamming weight of x=111010",
+        "o": [
+          "2",
+          "3",
+          "4",
+          "6"
+        ],
+        "a": 2,
+        "unit": 4,
+        "fam": "G4"
+      },
+      {
+        "p": 5,
+        "n": 17,
+        "q": "A tree with 10 vertices has ___ edges",
+        "o": [
+          "8",
+          "9",
+          "10",
+          "11"
+        ],
+        "a": 1,
+        "unit": 5,
+        "fam": "G7"
+      },
+      {
+        "p": 5,
+        "n": 18,
+        "q": "A path in a connected graph is a Hamiltonian path if",
+        "o": [
+          "includes every edge exactly once",
+          "includes every vertex exactly once",
+          "includes every edge exactly twice",
+          "includes every vertex exactly twice"
+        ],
+        "a": 1,
+        "unit": 5
+      },
+      {
+        "p": 5,
+        "n": 19,
+        "q": "Chromatic number of complete bipartite graph K4,3",
+        "o": [
+          "2",
+          "3",
+          "5",
+          "6"
+        ],
+        "a": 0,
+        "unit": 5,
+        "fam": "G6"
+      },
+      {
+        "p": 5,
+        "n": 20,
+        "q": "If every vertex of a simple graph has the same degree the graph is",
+        "o": [
+          "complete",
+          "regular",
+          "path",
+          "tree"
+        ],
+        "a": 1,
+        "unit": 5
+      },
+      {
+        "p": 4,
+        "n": 1,
+        "q": "A−B = B−A if and only if",
+        "o": [
+          "A⊂B",
+          "B⊂C",
+          "A or B=φ",
+          "A=B"
+        ],
+        "a": 3,
+        "unit": 1,
+        "fam": "G23"
+      },
+      {
+        "p": 4,
+        "n": 2,
+        "q": "R={(6,2),(8,2),(10,2)} from B={6,8,10} to A={2,3,5}: R⁻¹ is",
+        "o": [
+          "{(2,6),(3,8),(5,10)}",
+          "{(2,8),(3,6),(5,10)}",
+          "{(10,2),(8,3),(6,5)}",
+          "{(2,6),(2,8),(2,10)}"
+        ],
+        "a": 3,
+        "unit": 1
+      },
+      {
+        "p": 4,
+        "n": 3,
+        "q": "Warshall's algorithm is applied to construct",
+        "o": [
+          "Symmetric closure",
+          "Transitive closure",
+          "Reflexive closure",
+          "Anti-symmetric closure"
+        ],
+        "a": 1,
+        "unit": 1
+      },
+      {
+        "p": 4,
+        "n": 4,
+        "q": "f:R→R, f(x)=3x−7: f⁻¹ is",
+        "o": [
+          "7y−3",
+          "3y+7",
+          "(y+7)/3",
+          "(y−7)/3"
+        ],
+        "a": 2,
+        "unit": 3,
+        "fam": "G19"
+      },
+      {
+        "p": 4,
+        "n": 5,
+        "q": "Committee of 3 men and 4 women from 6 men and 7 women",
+        "o": [
+          "750",
+          "700",
+          "850",
+          "600"
+        ],
+        "a": 1,
+        "unit": 2,
+        "fam": "G14"
+      },
+      {
+        "p": 4,
+        "n": 6,
+        "q": "n pigeonholes occupied by kn+1 pigeons: at least one hole has",
+        "o": [
+          "k pigeons",
+          "k+1 pigeons",
+          "k−2 pigeons",
+          "k−3 pigeons"
+        ],
+        "a": 1,
+        "unit": 2,
+        "fam": "G5"
+      },
+      {
+        "p": 4,
+        "n": 7,
+        "q": "30 CS students: 15 know Java, 12 know C++, 5 both. Exactly one language",
+        "o": [
+          "27",
+          "22",
+          "17",
+          "5"
+        ],
+        "a": 2,
+        "unit": 2
+      },
+      {
+        "p": 4,
+        "n": 8,
+        "q": "LCM of two numbers is 14 and GCD is 1: product of the numbers",
+        "o": [
+          "14",
+          "15",
+          "7",
+          "49"
+        ],
+        "a": 0,
+        "unit": 2,
+        "fam": "G12"
+      },
+      {
+        "p": 4,
+        "n": 9,
+        "q": "The statement P∨¬P is a",
+        "o": [
+          "contradiction",
+          "tautology",
+          "contrapositive",
+          "inverse"
+        ],
+        "a": 1,
+        "unit": 3,
+        "fam": "G2"
+      },
+      {
+        "p": 4,
+        "n": 10,
+        "q": "Dual of ¬P→(P→Q)",
+        "o": [
+          "P∨(¬P∧Q)",
+          "¬(¬P)∧(¬P∧Q)",
+          "P→¬(P→Q)",
+          "(¬P∧Q)∧¬P"
+        ],
+        "a": 1,
+        "unit": 3,
+        "fam": "G1"
+      },
+      {
+        "p": 4,
+        "n": 11,
+        "q": "Contrapositive of p→q",
+        "o": [
+          "q→p",
+          "¬q→¬p",
+          "¬q→¬p (print variant)",
+          "q→¬p"
+        ],
+        "a": 1,
+        "unit": 3,
+        "low": 1,
+        "fam": "G3"
+      },
+      {
+        "p": 4,
+        "n": 12,
+        "q": "For each n∈N, 3²ⁿ−1 is divisible by",
+        "o": [
+          "8",
+          "16",
+          "32",
+          "18"
+        ],
+        "a": 0,
+        "unit": 1,
+        "fam": "G21"
+      },
+      {
+        "p": 4,
+        "n": 13,
+        "q": "Identity element of G={2,4,6,8} under multiplication modulo 10",
+        "o": [
+          "5",
+          "9",
+          "6",
+          "12"
+        ],
+        "a": 2,
+        "unit": 4,
+        "fam": "G11"
+      },
+      {
+        "p": 4,
+        "n": 14,
+        "q": "Inverse of (a*b) in a group",
+        "o": [
+          "a⁻¹*b⁻¹",
+          "a*b⁻¹",
+          "a⁻¹*b",
+          "b⁻¹*a⁻¹"
+        ],
+        "a": 3,
+        "unit": 4,
+        "fam": "G11"
+      },
+      {
+        "p": 4,
+        "n": 15,
+        "q": "Every sub-group of a cyclic group is",
+        "o": [
+          "Homomorphic",
+          "Cyclic",
+          "Isomorphic",
+          "Abelian"
+        ],
+        "a": 1,
+        "unit": 4,
+        "fam": "G10"
+      },
+      {
+        "p": 4,
+        "n": 16,
+        "q": "Hamming distance between 010000 and 000101",
+        "o": [
+          "3",
+          "2",
+          "6",
+          "5"
+        ],
+        "a": 0,
+        "unit": 4,
+        "fam": "G4"
+      },
+      {
+        "p": 4,
+        "n": 17,
+        "q": "Maximum number of edges in a simple graph with n vertices",
+        "o": [
+          "n(n−1)/2",
+          "n(n+1)/2",
+          "(n+1)(n−1)/2",
+          "n/2"
+        ],
+        "a": 0,
+        "unit": 5,
+        "fam": "G17"
+      },
+      {
+        "p": 4,
+        "n": 18,
+        "q": "A connected graph is Euler iff each vertex has",
+        "o": [
+          "Odd degree",
+          "Even degree",
+          "Equal degree",
+          "Increasing degree"
+        ],
+        "a": 1,
+        "unit": 5,
+        "fam": "G15"
+      },
+      {
+        "p": 4,
+        "n": 19,
+        "q": "Connected graph with n vertices and n−1 edges is",
+        "o": [
+          "Graph",
+          "Closed graph",
+          "Tree",
+          "Spanning tree"
+        ],
+        "a": 2,
+        "unit": 5,
+        "fam": "G7"
+      },
+      {
+        "p": 4,
+        "n": 20,
+        "q": "Chromatic number of the null graph",
+        "o": [
+          "4",
+          "2",
+          "3",
+          "1"
+        ],
+        "a": 3,
+        "unit": 5,
+        "fam": "G6"
+      },
+      {
+        "p": 3,
+        "n": 1,
+        "q": "Power set of {a,{b}}",
+        "o": [
+          "{∅,{a},{{b}},{a,{b}}}",
+          "{∅,{a},{b},{a,{b}}}",
+          "{∅,{{b}},{a,{b}}}",
+          "{∅,{a},{{b}}}"
+        ],
+        "a": 0,
+        "unit": 1,
+        "fam": "G23"
+      },
+      {
+        "p": 3,
+        "n": 2,
+        "q": "P={1,{2},4}, Q={1,2,4}",
+        "o": [
+          "P=Q",
+          "Q⊆P",
+          "P≠Q",
+          "P⊆Q"
+        ],
+        "a": 2,
+        "unit": 1,
+        "fam": "G23"
+      },
+      {
+        "p": 3,
+        "n": 3,
+        "q": "A={3,4,5}, R={(x,y)|x+y>10} on A is",
+        "o": [
+          "{(3,4),(4,5),(3,5)}",
+          "A",
+          "∅",
+          "{(3,4),(4,5)}"
+        ],
+        "a": 2,
+        "unit": 1,
+        "fam": "G25"
+      },
+      {
+        "p": 3,
+        "n": 4,
+        "q": "f(x)=2x+3, g(x)=3x+2: f∘g is",
+        "o": [
+          "3x+7",
+          "6x+7",
+          "6x+11",
+          "3x+11"
+        ],
+        "a": 1,
+        "unit": 1,
+        "fam": "G19"
+      },
+      {
+        "p": 3,
+        "n": 5,
+        "q": "10 points, no three collinear except 4 which are collinear: number of lines",
+        "o": [
+          "20",
+          "30",
+          "40",
+          "50"
+        ],
+        "a": 2,
+        "unit": 2,
+        "fam": "G14"
+      },
+      {
+        "p": 3,
+        "n": 6,
+        "q": "n pigeonholes, n+1 pigeons: some hole holds",
+        "o": [
+          "One pigeon",
+          "Two pigeons (at least)",
+          "Three",
+          "Four"
+        ],
+        "a": 1,
+        "unit": 2,
+        "fam": "G5"
+      },
+      {
+        "p": 3,
+        "n": 7,
+        "q": "gcd(a,b) for non-zero integers is",
+        "o": [
+          "mn+ab",
+          "ma+nb",
+          "abmn",
+          "ab divides mn"
+        ],
+        "a": 1,
+        "unit": 2,
+        "fam": "G12"
+      },
+      {
+        "p": 3,
+        "n": 8,
+        "q": "If a=qb+r then",
+        "o": [
+          "gcd(a,r)=gcd(b,r)",
+          "gcd(a,b)=gcd(a,r)",
+          "gcd(a,r)=gcd(q,r)",
+          "gcd(a,b)=gcd(b,r)"
+        ],
+        "a": 3,
+        "unit": 1,
+        "fam": "G12"
+      },
+      {
+        "p": 3,
+        "n": 9,
+        "q": "A premise may be introduced at any point in the derivation: called",
+        "o": [
+          "Rule P",
+          "Rule P and Rule T",
+          "Rule T",
+          "Rule CP"
+        ],
+        "a": 0,
+        "unit": 3,
+        "fam": "G9"
+      },
+      {
+        "p": 3,
+        "n": 10,
+        "q": "Dual of (P∧Q)∨T",
+        "o": [
+          "(P∧Q)∧T",
+          "(P∧Q)∧T'",
+          "(P∨Q)∧F",
+          "(P∧Q)∨F"
+        ],
+        "a": 2,
+        "unit": 3,
+        "fam": "G1"
+      },
+      {
+        "p": 3,
+        "n": 11,
+        "q": "Inverse of q→p (printed; options: p→q | ¬p→¬q | ¬q→p | ¬p→q)",
+        "o": [
+          "p→q",
+          "¬p→¬q",
+          "¬q→p",
+          "¬p→q"
+        ],
+        "a": 1,
+        "unit": 3,
+        "low": 1,
+        "fam": "G3"
+      },
+      {
+        "p": 3,
+        "n": 12,
+        "q": "Which proposition is a tautology",
+        "o": [
+          "(p∨q)→p",
+          "p∨(q→p)",
+          "p∨(p→q)",
+          "p→(p→q)"
+        ],
+        "a": 2,
+        "unit": 3,
+        "fam": "G2"
+      },
+      {
+        "p": 3,
+        "n": 13,
+        "q": "Order of the element i in G={1,−1,i,−i} under multiplication",
+        "o": [
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "a": 3,
+        "unit": 4,
+        "fam": "G8"
+      },
+      {
+        "p": 3,
+        "n": 14,
+        "q": "Inverse of p=(a b c / b c a) in S₃",
+        "o": [
+          "(a b c / c a b)",
+          "(a b c / a c b)",
+          "(a b c / b c a)",
+          "(a b c / b a c)"
+        ],
+        "a": 0,
+        "unit": 4
+      },
+      {
+        "p": 3,
+        "n": 15,
+        "q": "Subgroup of (R,+) is",
+        "o": [
+          "(R,−)",
+          "(Q,•)",
+          "(Z⁺,+)",
+          "(Z,+)"
+        ],
+        "a": 3,
+        "unit": 4
+      },
+      {
+        "p": 3,
+        "n": 16,
+        "q": "Inverse of a in (G,*) with a*b=a+b+2",
+        "o": [
+          "−a",
+          "−(a+4)",
+          "−2",
+          "−4"
+        ],
+        "a": 1,
+        "unit": 1,
+        "fam": "G11"
+      },
+      {
+        "p": 3,
+        "n": 17,
+        "q": "Chromatic number of the hexagon (cycle C6)",
+        "o": [
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "a": 1,
+        "unit": 5,
+        "fam": "G6"
+      },
+      {
+        "p": 3,
+        "n": 18,
+        "q": "_____ graphs satisfy invariant property",
+        "o": [
+          "Homomorphic",
+          "Eulerian",
+          "Isomorphic",
+          "Hamiltonian"
+        ],
+        "a": 2,
+        "unit": 5
+      },
+      {
+        "p": 3,
+        "n": 19,
+        "q": "A connected graph without any circuit is called",
+        "o": [
+          "Loop",
+          "Tree",
+          "Leaf",
+          "Forest"
+        ],
+        "a": 1,
+        "unit": 5,
+        "fam": "G7"
+      },
+      {
+        "p": 3,
+        "n": 20,
+        "q": "A vertex not adjacent to every other vertex is called ____ vertex (as printed)",
+        "o": [
+          "Isolated",
+          "Pendant",
+          "Incident",
+          "Simple"
+        ],
+        "a": 0,
+        "unit": 5,
+        "low": 1
+      },
+      {
+        "p": 2,
+        "n": 1,
+        "q": "f:A→B and g:B→C are bijections; g∘f is",
+        "o": [
+          "a bijection",
+          "not a bijection",
+          "only injective",
+          "only surjective"
+        ],
+        "a": 0,
+        "unit": 3,
+        "fam": "G19"
+      },
+      {
+        "p": 2,
+        "n": 2,
+        "q": "|A|=6, cardinality of power set of A",
+        "o": [
+          "64",
+          "8",
+          "32",
+          "16"
+        ],
+        "a": 0,
+        "unit": 1,
+        "fam": "G23"
+      },
+      {
+        "p": 2,
+        "n": 3,
+        "q": "M_R = M_Rᵀ, then the relation is",
+        "o": [
+          "symmetric",
+          "reflexive",
+          "transitive",
+          "irreflexive"
+        ],
+        "a": 0,
+        "unit": 1,
+        "fam": "G18"
+      },
+      {
+        "p": 2,
+        "n": 4,
+        "q": "Partition of A={1,2,3}",
+        "o": [
+          "{{1,2},{1,3}}",
+          "{{1,2,3},{3}}",
+          "{{1},{2,3}}",
+          "{{1,2},{2,3}}"
+        ],
+        "a": 2,
+        "unit": 1,
+        "fam": "G23"
+      },
+      {
+        "p": 2,
+        "n": 5,
+        "q": "Minimum persons to be sure at least two are born in the same month",
+        "o": [
+          "12",
+          "13",
+          "24",
+          "25"
+        ],
+        "a": 1,
+        "unit": 2,
+        "fam": "G5"
+      },
+      {
+        "p": 2,
+        "n": 6,
+        "q": "Ways to seat 7 persons round a table",
+        "o": [
+          "120",
+          "720",
+          "540",
+          "480"
+        ],
+        "a": 1,
+        "unit": 2,
+        "fam": "G14"
+      },
+      {
+        "p": 2,
+        "n": 7,
+        "q": "Every positive integer n>1 can be written uniquely as a product of",
+        "o": [
+          "Positive integers",
+          "Perfect squares",
+          "Perfect cubes",
+          "Primes"
+        ],
+        "a": 3,
+        "unit": 2,
+        "fam": "G13"
+      },
+      {
+        "p": 2,
+        "n": 8,
+        "q": "If a prime p divides a², then",
+        "o": [
+          "p divides a",
+          "a divides p",
+          "p does not divide a",
+          "a does not divide p"
+        ],
+        "a": 0,
+        "unit": 2,
+        "fam": "G13"
+      },
+      {
+        "p": 2,
+        "n": 9,
+        "q": "Converse of q→p",
+        "o": [
+          "p→¬q",
+          "¬p→¬q",
+          "p→q",
+          "¬p→q"
+        ],
+        "a": 2,
+        "unit": 3,
+        "fam": "G3"
+      },
+      {
+        "p": 2,
+        "n": 10,
+        "q": "Dual of Q∨F≡Q",
+        "o": [
+          "Q∨T≡Q",
+          "Q∨F≡T",
+          "Q",
+          "Q∧T≡Q"
+        ],
+        "a": 3,
+        "unit": 3,
+        "fam": "G1"
+      },
+      {
+        "p": 2,
+        "n": 11,
+        "q": "Set of premises is ____ if their conjunction implies a contradiction",
+        "o": [
+          "Tautology",
+          "Inconsistent",
+          "Consistent",
+          "Universe of discourse"
+        ],
+        "a": 1,
+        "unit": 3,
+        "fam": "G24"
+      },
+      {
+        "p": 2,
+        "n": 12,
+        "q": "p→(q→p) ≡",
+        "o": [
+          "T",
+          "F",
+          "both T and F",
+          "neither T nor F"
+        ],
+        "a": 0,
+        "unit": 3,
+        "fam": "G2"
+      },
+      {
+        "p": 2,
+        "n": 13,
+        "q": "Multiplicative group {1,−1,i,−i}: order of i",
+        "o": [
+          "3",
+          "4",
+          "2",
+          "1"
+        ],
+        "a": 1,
+        "unit": 4,
+        "fam": "G8"
+      },
+      {
+        "p": 2,
+        "n": 14,
+        "q": "Which statement is true",
+        "o": [
+          "Every group is abelian",
+          "Every abelian group is cyclic",
+          "Every cyclic group is abelian",
+          "Every group is cyclic"
+        ],
+        "a": 2,
+        "unit": 1,
+        "fam": "G10"
+      },
+      {
+        "p": 2,
+        "n": 15,
+        "q": "Every group of prime order is",
+        "o": [
+          "not cyclic",
+          "cyclic",
+          "left coset",
+          "right coset"
+        ],
+        "a": 1,
+        "unit": 4,
+        "fam": "G10"
+      },
+      {
+        "p": 2,
+        "n": 16,
+        "q": "Hamming distance between 11010 and 10101",
+        "o": [
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "a": 3,
+        "unit": 4,
+        "fam": "G4"
+      },
+      {
+        "p": 2,
+        "n": 17,
+        "q": "Simple graph with exactly one edge between each pair of distinct vertices",
+        "o": [
+          "Regular",
+          "Bipartite",
+          "Complete",
+          "Pseudo"
+        ],
+        "a": 2,
+        "unit": 5,
+        "fam": "G17"
+      },
+      {
+        "p": 2,
+        "n": 18,
+        "q": "A tree with 8 edges has",
+        "o": [
+          "6 vertices",
+          "7 vertices",
+          "8 vertices",
+          "9 vertices"
+        ],
+        "a": 3,
+        "unit": 5,
+        "fam": "G7"
+      },
+      {
+        "p": 2,
+        "n": 19,
+        "q": "Edges in complete graph K5",
+        "o": [
+          "10",
+          "12",
+          "16",
+          "20"
+        ],
+        "a": 0,
+        "unit": 5,
+        "fam": "G17"
+      },
+      {
+        "p": 2,
+        "n": 20,
+        "q": "Number of vertices of odd degree in an undirected graph is",
+        "o": [
+          "Zero",
+          "One",
+          "Even",
+          "Odd"
+        ],
+        "a": 2,
+        "unit": 5,
+        "fam": "G16"
+      },
+      {
+        "p": 1,
+        "n": 1,
+        "q": "Relation that is reflexive, symmetric and transitive",
+        "o": [
+          "Poset",
+          "Equivalence relation",
+          "Identity relation",
+          "Partial order relation"
+        ],
+        "a": 1,
+        "unit": 1,
+        "fam": "G18"
+      },
+      {
+        "p": 1,
+        "n": 2,
+        "q": "Dual of X=(B̄∩A)∪(A∩B)",
+        "o": [
+          "X=(B̄∪A)",
+          "X=(A∩B)",
+          "X=(B̄∪A)∩(A∪B)",
+          "X=φ"
+        ],
+        "a": 2,
+        "unit": 3,
+        "fam": "G1"
+      },
+      {
+        "p": 1,
+        "n": 3,
+        "q": "f:A→B, g:B→A (inverse pair): g∘f is",
+        "o": [
+          "I_A",
+          "Many one",
+          "I_B",
+          "Does not exist"
+        ],
+        "a": 0,
+        "unit": 3,
+        "fam": "G19"
+      },
+      {
+        "p": 1,
+        "n": 4,
+        "q": "A={3,4,5}, R={(x,y)|x+y>10}: R is",
+        "o": [
+          "{(3,4),(4,5),(3,5)}",
+          "{(4,4),(4,5),(5,5)}",
+          "{(5,5)}",
+          "{∅} (empty)"
+        ],
+        "a": 3,
+        "unit": 1,
+        "fam": "G25"
+      },
+      {
+        "p": 1,
+        "n": 5,
+        "q": "Generalised pigeonhole: n pigeons in m holes, then",
+        "o": [
+          "n≤m",
+          "n≥m",
+          "n<m",
+          "n>m"
+        ],
+        "a": 3,
+        "unit": 2,
+        "fam": "G5"
+      },
+      {
+        "p": 1,
+        "n": 6,
+        "q": "If √n is not rational then n is",
+        "o": [
+          "2",
+          "4",
+          "9",
+          "16"
+        ],
+        "a": 0,
+        "unit": 1
+      },
+      {
+        "p": 1,
+        "n": 7,
+        "q": "If a|b and b|a then |a|=",
+        "o": [
+          "b",
+          "2b",
+          "a",
+          "b absolute"
+        ],
+        "a": 3,
+        "unit": 1
+      },
+      {
+        "p": 1,
+        "n": 8,
+        "q": "Minimum students to be sure three are born in the same month",
+        "o": [
+          "22",
+          "23",
+          "24",
+          "25"
+        ],
+        "a": 3,
+        "unit": 2,
+        "fam": "G5"
+      },
+      {
+        "p": 1,
+        "n": 9,
+        "q": "Premises may be introduced at any point in derivation: called",
+        "o": [
+          "Rule P",
+          "Rule T",
+          "Rule CP",
+          "Rule P and T"
+        ],
+        "a": 0,
+        "unit": 3,
+        "fam": "G9"
+      },
+      {
+        "p": 1,
+        "n": 10,
+        "q": "Symbolic form of 'if Raja takes maths or English then Arun takes Hindi'",
+        "o": [
+          "(p∨q)→r",
+          "(p∧q)→r",
+          "p∨(q→r)",
+          "p∧(q→r)"
+        ],
+        "a": 0,
+        "unit": 3,
+        "fam": "G24"
+      },
+      {
+        "p": 1,
+        "n": 11,
+        "q": "Mathematical induction is used for statements involving only",
+        "o": [
+          "Positive integers",
+          "Negative integers",
+          "Rational numbers",
+          "Natural numbers"
+        ],
+        "a": 0,
+        "unit": 3,
+        "low": 1,
+        "fam": "G21"
+      },
+      {
+        "p": 1,
+        "n": 12,
+        "q": "p∧(p→q) is equivalent to",
+        "o": [
+          "q",
+          "p",
+          "p∨q",
+          "p∧q"
+        ],
+        "a": 3,
+        "unit": 3,
+        "fam": "G24"
+      },
+      {
+        "p": 1,
+        "n": 13,
+        "q": "Every cyclic group is",
+        "o": [
+          "Abelian",
+          "Non abelian",
+          "Sub group",
+          "Only semigroup"
+        ],
+        "a": 0,
+        "unit": 4,
+        "fam": "G10"
+      },
+      {
+        "p": 1,
+        "n": 14,
+        "q": "Order of the group {1,−1,i,−i} under multiplication",
+        "o": [
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "a": 3,
+        "unit": 4,
+        "fam": "G8"
+      },
+      {
+        "p": 1,
+        "n": 15,
+        "q": "Code detects at most K errors iff minimum distance is at least",
+        "o": [
+          "K−1",
+          "K+1",
+          "K",
+          "2K+1"
+        ],
+        "a": 1,
+        "unit": 4,
+        "fam": "G22"
+      },
+      {
+        "p": 1,
+        "n": 16,
+        "q": "Hamming weight of 11010",
+        "o": [
+          "2",
+          "3",
+          "5",
+          "1"
+        ],
+        "a": 1,
+        "unit": 4,
+        "fam": "G4"
+      },
+      {
+        "p": 1,
+        "n": 17,
+        "q": "Number of vertices of odd degree in an undirected graph is",
+        "o": [
+          "Even",
+          "Odd",
+          "Prime",
+          "Multiple of 3"
+        ],
+        "a": 0,
+        "unit": 5,
+        "fam": "G16"
+      },
+      {
+        "p": 1,
+        "n": 18,
+        "q": "A tree with 50 vertices has ___ edges",
+        "o": [
+          "47",
+          "48",
+          "49",
+          "50"
+        ],
+        "a": 2,
+        "unit": 5,
+        "fam": "G7"
+      },
+      {
+        "p": 1,
+        "n": 19,
+        "q": "Edges in a bipartite graph with n vertices is at most",
+        "o": [
+          "n²/2",
+          "n²/4",
+          "n²/6",
+          "n²/8"
+        ],
+        "a": 1,
+        "unit": 5
+      },
+      {
+        "p": 1,
+        "n": 20,
+        "q": "Chromatic number of the hexagon graph",
+        "o": [
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "a": 1,
+        "unit": 5,
+        "fam": "G6"
+      },
+      {
+        "p": 0,
+        "n": 1,
+        "q": "A∩(B∪A) is",
+        "o": [
+          "φ",
+          "A",
+          "B",
+          "Ā∩B"
+        ],
+        "a": 1,
+        "unit": 1,
+        "fam": "G23"
+      },
+      {
+        "p": 0,
+        "n": 2,
+        "q": "R={(1,1),(1,3),(3,2),(3,4),(4,2)}, S={(2,1),(3,3),(3,4),(4,1)}: RoS is",
+        "o": [
+          "{(1,3),(1,4),(3,1),(4,1)}",
+          "{(1,3),(3,3),(3,1),(4,1)}",
+          "{(1,3),(1,4),(3,1),(4,2)}",
+          "{(1,3),(1,4),(2,1),(3,4)}"
+        ],
+        "a": 0,
+        "unit": 1
+      },
+      {
+        "p": 0,
+        "n": 3,
+        "q": "f:A→B and g:B→C bijective: (g∘f)⁻¹ is",
+        "o": [
+          "f⁻¹∘g⁻¹",
+          "g⁻¹∘f⁻¹",
+          "f⁻¹∘g",
+          "g∘f⁻¹"
+        ],
+        "a": 0,
+        "unit": 3,
+        "fam": "G19"
+      },
+      {
+        "p": 0,
+        "n": 4,
+        "q": "f(x)=2x+3, g(x)=3x+2: f∘g is",
+        "o": [
+          "3x+7",
+          "6x+11",
+          "6x+7",
+          "3x+11"
+        ],
+        "a": 2,
+        "unit": 1,
+        "fam": "G19"
+      },
+      {
+        "p": 0,
+        "n": 5,
+        "q": "a|c and b|c with gcd(a,b)=1 then",
+        "o": [
+          "ab/c",
+          "c/ab (ab divides c)",
+          "c/a",
+          "c/b"
+        ],
+        "a": 1,
+        "unit": 2,
+        "fam": "G12"
+      },
+      {
+        "p": 0,
+        "n": 6,
+        "q": "Ways to arrange 7 different beads in a necklace",
+        "o": [
+          "250",
+          "300",
+          "360",
+          "350"
+        ],
+        "a": 2,
+        "unit": 2,
+        "fam": "G14"
+      },
+      {
+        "p": 0,
+        "n": 7,
+        "q": "If gcd(a,b)=1 then gcd(ka,kb)=",
+        "o": [
+          "1",
+          "k",
+          "2k",
+          "Does not exist"
+        ],
+        "a": 1,
+        "unit": 2,
+        "fam": "G12"
+      },
+      {
+        "p": 0,
+        "n": 8,
+        "q": "Correct statement",
+        "o": [
+          "lcm(−4,14)=28",
+          "lcm(−4,14)=−28",
+          "lcm(−4,14)=−56",
+          "lcm(−4,14)=−4"
+        ],
+        "a": 0,
+        "unit": 1,
+        "fam": "G12"
+      },
+      {
+        "p": 0,
+        "n": 9,
+        "q": "Converse of ¬p→q",
+        "o": [
+          "p→q",
+          "q→¬p",
+          "¬p→q",
+          "p→¬q"
+        ],
+        "a": 1,
+        "unit": 3,
+        "fam": "G3"
+      },
+      {
+        "p": 0,
+        "n": 10,
+        "q": "Dual of (P∨Q)→R",
+        "o": [
+          "(P∧Q)∧R",
+          "¬(P∨Q)→R",
+          "¬(P∧Q)∧R",
+          "(P∨Q)∧¬R"
+        ],
+        "a": 2,
+        "unit": 3,
+        "fam": "G1"
+      },
+      {
+        "p": 0,
+        "n": 11,
+        "q": "Negation of 'I did not have strange dreams'",
+        "o": [
+          "I have strange dreams",
+          "I have peaceful dreams",
+          "I have a dreamless sleep",
+          "I never sleep"
+        ],
+        "a": 0,
+        "unit": 3,
+        "fam": "G24"
+      },
+      {
+        "p": 0,
+        "n": 12,
+        "q": "Which proposition is a tautology",
+        "o": [
+          "(p∨q)→p",
+          "p∨(q→p)",
+          "p∨(p→q)",
+          "p→(p→q)"
+        ],
+        "a": 2,
+        "unit": 3,
+        "fam": "G2"
+      },
+      {
+        "p": 0,
+        "n": 13,
+        "q": "If e₁,e₂ are two identity elements in a group (G,*)",
+        "o": [
+          "e₁=0",
+          "e₂=0",
+          "e₁=e₂",
+          "e₁≠e₂"
+        ],
+        "a": 2,
+        "unit": 4,
+        "fam": "G11"
+      },
+      {
+        "p": 0,
+        "n": 14,
+        "q": "Inverse of a in group with a*b=a+b+2",
+        "o": [
+          "−a",
+          "a⁻¹",
+          "2",
+          "−(a+4)"
+        ],
+        "a": 3,
+        "unit": 4,
+        "fam": "G11"
+      },
+      {
+        "p": 0,
+        "n": 15,
+        "q": "Every finite integral domain is a",
+        "o": [
+          "Field",
+          "Ring",
+          "Integral domain",
+          "Group"
+        ],
+        "a": 0,
+        "unit": 4,
+        "fam": "G20"
+      },
+      {
+        "p": 0,
+        "n": 16,
+        "q": "Hamming weight of x=111010",
+        "o": [
+          "3",
+          "2",
+          "4",
+          "6"
+        ],
+        "a": 2,
+        "unit": 4,
+        "fam": "G4"
+      },
+      {
+        "p": 0,
+        "n": 17,
+        "q": "Graph where loops and parallel edges are allowed",
+        "o": [
+          "Pseudo",
+          "Multi",
+          "Simple",
+          "Bipartite"
+        ],
+        "a": 0,
+        "unit": 5
+      },
+      {
+        "p": 0,
+        "n": 19,
+        "q": "A connected graph without any circuit",
+        "o": [
+          "Leaf",
+          "Flower",
+          "Loop",
+          "Tree"
+        ],
+        "a": 3,
+        "unit": 5,
+        "fam": "G7"
+      },
+      {
+        "p": 0,
+        "n": 20,
+        "q": "Chromatic number of K4-like figure (4 vertices all mutually adjacent)",
+        "o": [
+          "4",
+          "3",
+          "2",
+          "1"
+        ],
+        "a": 0,
+        "unit": 5,
+        "fam": "G6"
+      }
+    ],
+    "families": [
+      {
+        "id": "G19",
+        "title": "Functions",
+        "papers": [
+          "PYQ May 2024",
+          "PYQ Jul 2024",
+          "PYQ Nov 2024",
+          "PYQ May 2025",
+          "PYQ Jul 2025",
+          "PYQ Jul 2025 (Paper - 2)",
+          "PYQ Nov 2025"
+        ],
+        "count": 7,
+        "questions": 9,
+        "tip": "Bijections compose to a bijection; (g∘f)⁻¹ = f⁻¹∘g⁻¹; onto∘onto is onto; f=2x+3, g=3x+2 ⇒ f∘g = 6x+7; f(x)=3x−7 ⇒ f⁻¹(y) = (y+7)/3; x+5 on N is injective, not surjective.",
+        "unit": 3
+      },
+      {
+        "id": "G14",
+        "title": "Counting formulas",
+        "papers": [
+          "PYQ May 2024",
+          "PYQ Nov 2024",
+          "PYQ May 2025",
+          "PYQ Jul 2025",
+          "PYQ Jul 2025 (Paper - 2)",
+          "PYQ Nov 2025",
+          "PYQ May 2026"
+        ],
+        "count": 7,
+        "questions": 8,
+        "tip": "Repeats n!/(p!q!): PEPPER 60, STRESS 120, SUCCESS 7!/(3!2!). Round table (n−1)!: 7 people 720. Necklace (n−1)!/2: 7 beads 360. Block together: 4 men of 10 → 4!·6!. Committee C(6,3)·C(7,4)=700. 10 points, 4 collinear: 45−6+1 = 40.",
+        "unit": 2
+      },
+      {
+        "id": "G6",
+        "title": "Chromatic number",
+        "papers": [
+          "PYQ May 2024",
+          "PYQ Jul 2024",
+          "PYQ May 2025",
+          "PYQ Jul 2025",
+          "PYQ Jul 2025 (Paper - 2)",
+          "PYQ Nov 2025",
+          "PYQ May 2026"
+        ],
+        "count": 7,
+        "questions": 7,
+        "tip": "Hexagon (even cycle) 2, bipartite and K₄,₃ 2, Kₙ = n (K₄ → 4), null graph 1. A graph colourable with two colours is bipartite.",
+        "unit": 5
+      },
+      {
+        "id": "G7",
+        "title": "Trees",
+        "papers": [
+          "PYQ May 2024",
+          "PYQ Jul 2024",
+          "PYQ Nov 2024",
+          "PYQ May 2025",
+          "PYQ Jul 2025",
+          "PYQ Jul 2025 (Paper - 2)",
+          "PYQ Nov 2025"
+        ],
+        "count": 7,
+        "questions": 7,
+        "tip": "A tree is connected and acyclic; n vertices ⇒ n−1 edges (50 → 49, 10 → 9, 8 edges → 9 vertices). A connected graph with no circuit is a tree.",
+        "unit": 5
+      },
+      {
+        "id": "G24",
+        "title": "Logic equivalences and inference",
+        "papers": [
+          "PYQ May 2024",
+          "PYQ Jul 2024",
+          "PYQ Nov 2024",
+          "PYQ Jul 2025 (Paper - 2)",
+          "PYQ Nov 2025",
+          "PYQ May 2026"
+        ],
+        "count": 6,
+        "questions": 10,
+        "tip": "p→q ≡ ¬p∨q; p∧(p→q) ≡ p∧q; ¬(A∧B) ≡ ¬A∨¬B; absorption p∨(p∧q) ≡ p; inconsistent premises: their conjunction implies a contradiction; proof by contradiction is not a direct proof.",
+        "unit": 3
+      },
+      {
+        "id": "G12",
+        "title": "gcd and lcm properties",
+        "papers": [
+          "PYQ May 2024",
+          "PYQ May 2025",
+          "PYQ Jul 2025",
+          "PYQ Jul 2025 (Paper - 2)",
+          "PYQ Nov 2025",
+          "PYQ May 2026"
+        ],
+        "count": 6,
+        "questions": 9,
+        "tip": "gcd(a,b)=1 ⇒ gcd(ka,kb)=k and gcd(ac,b)=gcd(c,b); a=qb+r ⇒ gcd(a,b)=gcd(b,r); gcd = ma+nb; gcd·lcm = product (gcd 1, lcm 14 → 14; gcd(72,x)=36, lcm 216 → x=108); lcm(−4,14)=28.",
+        "unit": 2
+      },
+      {
+        "id": "G23",
+        "title": "Sets and power sets",
+        "papers": [
+          "PYQ May 2024",
+          "PYQ Nov 2024",
+          "PYQ May 2025",
+          "PYQ Jul 2025",
+          "PYQ Jul 2025 (Paper - 2)",
+          "PYQ May 2026"
+        ],
+        "count": 6,
+        "questions": 8,
+        "tip": "|P(A)| = 2^|A| (64 for 6 elements); P({a,{b}}) = {∅,{a},{{b}},{a,{b}}}; A−B = B−A iff A = B; A∩(B∪A) = A; A−(B∩C) = (A−B)∪(A−C); {1,{2},4} ≠ {1,2,4}.",
+        "unit": 1
+      },
+      {
+        "id": "G5",
+        "title": "Pigeonhole principle",
+        "papers": [
+          "PYQ Jul 2024",
+          "PYQ Nov 2024",
+          "PYQ May 2025",
+          "PYQ Jul 2025",
+          "PYQ Jul 2025 (Paper - 2)",
+          "PYQ Nov 2025"
+        ],
+        "count": 6,
+        "questions": 7,
+        "tip": "n pigeons in m holes ⇒ some hole has at least ⌈n/m⌉. Same month: 13 people for two, 25 for three. kn+1 pigeons in n holes ⇒ k+1. 36 in 4 holes ⇒ 9. 5 grades, 7 alike ⇒ 31.",
+        "unit": 2
+      },
+      {
+        "id": "G1",
+        "title": "Dual of a statement",
+        "papers": [
+          "PYQ May 2024",
+          "PYQ Jul 2024",
+          "PYQ Nov 2024",
+          "PYQ May 2025",
+          "PYQ Jul 2025",
+          "PYQ Jul 2025 (Paper - 2)"
+        ],
+        "count": 6,
+        "questions": 6,
+        "tip": "Dual: swap ∧↔∨ and T↔F, keep the letters and ¬. (P∧Q)∨T → (P∨Q)∧F; Q∨F≡Q → Q∧T≡Q; (B̄∩A)∪(A∩B) → (B̄∪A)∩(A∪B); (p∧q)∨r → (p∨q)∧r.",
+        "unit": 3
+      },
+      {
+        "id": "G2",
+        "title": "Tautology",
+        "papers": [
+          "PYQ May 2024",
+          "PYQ Nov 2024",
+          "PYQ May 2025",
+          "PYQ Jul 2025",
+          "PYQ Jul 2025 (Paper - 2)",
+          "PYQ May 2026"
+        ],
+        "count": 6,
+        "questions": 6,
+        "tip": "Tautologies asked: p∨(p→q) (twice), P∨¬P, p→(q→p), (p→¬p)→¬p, (¬q∧(p→q))→¬p (modus tollens).",
+        "unit": 3
+      },
+      {
+        "id": "G11",
+        "title": "Group inverse and identity",
+        "papers": [
+          "PYQ May 2024",
+          "PYQ May 2025",
+          "PYQ Jul 2025",
+          "PYQ Jul 2025 (Paper - 2)",
+          "PYQ May 2026"
+        ],
+        "count": 5,
+        "questions": 8,
+        "tip": "(a*b)⁻¹ = b⁻¹*a⁻¹; the identity is unique; for a*b = a+b+2 the identity is −2 and the inverse of a is −(a+4); identity of {2,4,6,8} mod 10 is 6.",
+        "unit": 4
+      },
+      {
+        "id": "G18",
+        "title": "Relations",
+        "papers": [
+          "PYQ Jul 2024",
+          "PYQ Nov 2024",
+          "PYQ Jul 2025 (Paper - 2)",
+          "PYQ Nov 2025",
+          "PYQ May 2026"
+        ],
+        "count": 5,
+        "questions": 7,
+        "tip": "Equivalence = reflexive + symmetric + transitive. {(1,1),(2,2),(3,3)} on {1,2,3} is an equivalence relation. M_R = M_Rᵀ ⇔ symmetric. Every partition gives an equivalence relation.",
+        "unit": 1
+      },
+      {
+        "id": "G3",
+        "title": "Converse, inverse, contrapositive",
+        "papers": [
+          "PYQ May 2024",
+          "PYQ Nov 2024",
+          "PYQ May 2025",
+          "PYQ Jul 2025",
+          "PYQ Nov 2025"
+        ],
+        "count": 5,
+        "questions": 5,
+        "tip": "p→q: converse q→p, inverse ¬p→¬q, contrapositive ¬q→¬p. Converse of q→p is p→q; converse of ¬p→q is q→¬p.",
+        "unit": 3
+      },
+      {
+        "id": "G4",
+        "title": "Hamming weight and distance",
+        "papers": [
+          "PYQ May 2024",
+          "PYQ Jul 2024",
+          "PYQ Nov 2024",
+          "PYQ Jul 2025",
+          "PYQ Jul 2025 (Paper - 2)"
+        ],
+        "count": 5,
+        "questions": 5,
+        "tip": "Weight = number of 1s (111010 → 4, 11010 → 3). Distance = number of differing bits (11010 vs 10101 → 4; 010000 vs 000101 → 3).",
+        "unit": 4
+      },
+      {
+        "id": "G10",
+        "title": "Cyclic groups",
+        "papers": [
+          "PYQ Jul 2024",
+          "PYQ Nov 2024",
+          "PYQ Jul 2025",
+          "PYQ May 2026"
+        ],
+        "count": 4,
+        "questions": 5,
+        "tip": "Every cyclic group is abelian; every subgroup of a cyclic group is cyclic; every group of prime order is cyclic.",
+        "unit": 4
+      },
+      {
+        "id": "G13",
+        "title": "Primes",
+        "papers": [
+          "PYQ Nov 2024",
+          "PYQ Jul 2025 (Paper - 2)",
+          "PYQ May 2026"
+        ],
+        "count": 3,
+        "questions": 5,
+        "tip": "Every integer n>1 is a unique product of primes (fundamental theorem of arithmetic); there are infinitely many primes; p | a² ⇒ p | a.",
+        "unit": 2
+      },
+      {
+        "id": "G15",
+        "title": "Euler graphs",
+        "papers": [
+          "PYQ Jul 2025",
+          "PYQ Nov 2025",
+          "PYQ May 2026"
+        ],
+        "count": 3,
+        "questions": 4,
+        "tip": "Euler circuit ⇔ connected and every vertex has even degree. A circuit is a closed walk with no repeated edge. A tree with more than two vertices is not Eulerian.",
+        "unit": 5
+      },
+      {
+        "id": "G17",
+        "title": "Complete graphs",
+        "papers": [
+          "PYQ Nov 2024",
+          "PYQ Jul 2025",
+          "PYQ Nov 2025"
+        ],
+        "count": 3,
+        "questions": 4,
+        "tip": "Kₙ has n(n−1)/2 edges: K₅ → 10, K₉ → 36. Complete = exactly one edge between each pair of distinct vertices.",
+        "unit": 5
+      },
+      {
+        "id": "G8",
+        "title": "The group {1, −1, i, −i}",
+        "papers": [
+          "PYQ Jul 2024",
+          "PYQ Nov 2024",
+          "PYQ May 2025"
+        ],
+        "count": 3,
+        "questions": 3,
+        "tip": "The group has order 4 and the element i has order 4.",
+        "unit": 4
+      },
+      {
+        "id": "G9",
+        "title": "Rule P",
+        "papers": [
+          "PYQ Jul 2024",
+          "PYQ May 2025",
+          "PYQ Jul 2025 (Paper - 2)"
+        ],
+        "count": 3,
+        "questions": 3,
+        "tip": "A premise may be introduced at any point of a derivation: Rule P.",
+        "unit": 3
+      },
+      {
+        "id": "G16",
+        "title": "Handshaking and odd vertices",
+        "papers": [
+          "PYQ Jul 2024",
+          "PYQ Nov 2024",
+          "PYQ May 2026"
+        ],
+        "count": 3,
+        "questions": 3,
+        "tip": "Σ deg(v) = 2|E| for undirected graphs, so the number of odd-degree vertices is even.",
+        "unit": 5
+      },
+      {
+        "id": "G20",
+        "title": "Integral domain and field",
+        "papers": [
+          "PYQ May 2024",
+          "PYQ Nov 2025",
+          "PYQ May 2026"
+        ],
+        "count": 3,
+        "questions": 3,
+        "tip": "Integral domain = commutative ring with unity and no zero divisors. Every finite integral domain is a field.",
+        "unit": 4
+      },
+      {
+        "id": "G21",
+        "title": "Induction",
+        "papers": [
+          "PYQ Jul 2024",
+          "PYQ Jul 2025",
+          "PYQ Nov 2025"
+        ],
+        "count": 3,
+        "questions": 3,
+        "tip": "Base case, assume P(k), prove P(k+1); used for positive integers; 3²ⁿ−1 is divisible by 8.",
+        "unit": 3
+      },
+      {
+        "id": "G22",
+        "title": "Coding theory",
+        "papers": [
+          "PYQ Jul 2024",
+          "PYQ Nov 2025",
+          "PYQ May 2026"
+        ],
+        "count": 3,
+        "questions": 3,
+        "tip": "d_min ≥ k+1 detects k errors; d_min ≥ 2k+1 corrects k (d_min = 5 corrects 2); parity digits added to the message give linear block (group) codes.",
+        "unit": 4
+      },
+      {
+        "id": "G25",
+        "title": "Relation x+y>10 on {3,4,5}",
+        "papers": [
+          "PYQ Jul 2024",
+          "PYQ May 2025"
+        ],
+        "count": 2,
+        "questions": 2,
+        "tip": "No pair has x+y > 10, so R is the empty relation.",
+        "unit": 1
+      }
+    ],
+    "note": "Part A is 20 one-mark MCQs. The papers print no answer key: every answer here was worked out by hand, and the ones marked “check” are less certain."
   }
 };

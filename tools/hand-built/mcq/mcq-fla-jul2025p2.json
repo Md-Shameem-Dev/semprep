@@ -1,0 +1,22 @@
+{"paper":"Jul 2025 (Paper - 2)","low":[14],"q":[
+[1,"L={ab,aa,baa}: strings in L*: 1) abaabaaabaa 2) aaaabaaaa 3) baaaaabaaaab 4) baaaaabaa","1,2 and 3|2,3 and 4|1,2 and 4|1,3 and 4","C"],
+[2,"Minimum states in DFA accepting all strings over {a,b} with no two consecutive a's","2|3|4|5","B"],
+[3,"The set of all strings over {a,b} (including ε)","(a+b)*|(a+b)+|(a+b)|(a*b*)*","A"],
+[4,"Finite State Machines can recognize","any grammar|only CFG|any unambiguous grammar|only regular grammar","D"],
+[5,"Null production in a CFG","A→εA|A→BA|A→aBA|A→aA","A"],
+[6,"In a derivation tree the internal nodes represent","Terminals|Non-terminals|Productions|Start symbols","B"],
+[7,"In Greibach Normal Form each production has the form","A→BCA|A→aBA|A→BaA|B→BBaaAA","B"],
+[8,"To minimize a DFA the method typically used","Eliminate unit and null productions|Merge equivalent states|Convert DFA to NFA and back|Convert DFA to a CFG","B"],
+[9,"Languages recognised by a Pushdown Automaton","Regular|Context-sensitive|Context-free|Recursively enumerable","C"],
+[10,"Component of a PDA not present in a finite automaton","Input tape|Stack|State transition function|Acceptance condition","B"],
+[11,"Type of PDA equivalent to a context-free grammar","Deterministic PDA|Non-deterministic PDA|Finite automaton|Turing machine","B"],
+[12,"Pumping Lemma for regular languages primarily helps to prove","a language is regular|a language is not regular|a language is context-free|a language is finite","B"],
+[13,"In TM T=(Q,Σ,Γ,q0,δ), what Γ represents","Tape alphabets|Input symbols|Transition function|Initial state","A"],
+[14,"An instantaneous description of a Turing machine consists of","Present state and input to be processed|Present state and entire input to be processed|Present input only|Present state only","A"],
+[15,"If δ is not defined on the current state and current tape symbol the machine","does not halt|halts|goes into loop forever|does not go into loop","B"],
+[16,"Halting states of a Turing machine are","Start and Stop|Start and reject|Accept and Reject|Reject and allow","C"],
+[17,"Problem known to be NP-complete","Travelling Salesman Problem|Sorting|Finding the GCD|Matrix Multiplication","A"],
+[18,"Modified PCP is primarily concerned with","Finding a solution for a given PCP instance|Modifying strings to ensure a unique solution|Constraints to make PCP easier|Determining whether a matching sequence exists with specific constraints","D"],
+[19,"Technique often used to prove a problem is NP-complete","Turing reduction|Randomized reduction|Polynomial-time reduction|Enumeration","C"],
+[20,"Space complexity of a Turing Machine that recognises a regular language","Constant space|Linear space|Polynomial space|Exponential space","A"]
+]}

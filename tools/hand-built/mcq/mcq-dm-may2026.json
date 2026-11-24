@@ -1,0 +1,22 @@
+{"paper":"May 2026","q":[
+[1,"U={1..10}, A={1,2,3,4,5}, B={1,2,4,8}, C={1,2,3,5,7}, D={2,4,6,8}: (B−C)−D is","{2,4,8}|∅|{4,8}|{1,2,3,5}","B"],
+[2,"Reflexive closure of R={(1,1),(1,3),(2,1),(3,3)} on {1,2,3}","{(1,1),(1,2),(1,3),(3,1),(2,1),(3,3)}|{(1,1),(1,3),(2,1),(3,1),(3,3)}|{(1,1),(1,3),(2,1),(2,2),(3,3)}|{(1,1),(1,3),(2,1),(3,2),(3,3)}","C"],
+[3,"Every partition of a set determines","a function|a permutation|an equivalence relation|a bijection","C"],
+[4,"In a Hasse diagram the reflexive and transitive edges are","explicitly drawn|dotted|omitted|coloured","C"],
+[5,"Arrangements of the six letters of PEPPER","720|360|120|60","D"],
+[6,"The number of prime numbers is","finite|infinite|equal to number of even numbers|100","B"],
+[7,"If gcd(a,b)=1 then for any integer c","gcd(ac,b)=gcd(c,b)|gcd(ac,b)=gcd(a,b)|gcd(ac,b)=c·gcd(a,b)|gcd(ac,b)=−gcd(c,b)","A"],
+[8,"Every integer n>1 is a unique product of primes: this is","Euclid lemma|Division algorithm|Fundamental theorem of arithmetic|Divisibility rule","C"],
+[9,"(p→¬p)→¬p is","Tautology|Contradiction|Duality|Equivalence","A"],
+[10,"Absorption law","p∨(p∧q)≡p|p∨p≡p|p∨T≡T|¬p∨(p∧q)≡p","A"],
+[11,"Rules of inference used to draw a conclusion from premises in finite steps is called","A proposition|Argument|Tautology|Formal proof","D"],
+[12,"Which is NOT a direct proof technique","Algebraic manipulation|Logical deduction|Proof by contradiction|Applying definitions","C"],
+[13,"Identity element in a permutation group","The transposition|The cycle|The permutation leaving every element fixed|The inverse permutation","C"],
+[14,"Commutative ring with unity and no zero divisors","Field|Integral domain|Group|Module","B"],
+[15,"Codes got by adding parity digits to the message digits","Cyclic codes|Linear block codes|Hamming codes|Convolutional codes","B"],
+[16,"Every subgroup of a cyclic group is","non-cyclic|cyclic|infinite|normal only","B"],
+[17,"Handshaking theorem applies to","Directed graphs only|Undirected graphs|Weighted graphs only|Trees only","B"],
+[18,"A circuit is","a path with no repeated vertices|a closed walk with no repeated edges|a graph with one vertex|a complete graph","B"],
+[19,"Which graph is NOT Eulerian","A cycle graph|Complete graph with odd number of vertices|A tree with more than two vertices|Graph with all degrees 4","C"],
+[20,"Graph colourable with two colours","Complete|Bipartite|Regular|Eulerian","B"]
+]}

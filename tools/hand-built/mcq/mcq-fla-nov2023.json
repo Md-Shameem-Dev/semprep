@@ -1,0 +1,22 @@
+{"paper":"Nov 2023","low":[8],"q":[
+[1,"Regular expression for the set of all strings over {1} having odd length","1*|1(11)*|(111)*|1+","B"],
+[2,"True for DFA and NFA","DFA has one transition for each alphabet symbol|NFA will have finite states for transition each alphabet|DFA will have epsilon moves|DFA can have many transitions for each alphabet","A"],
+[3,"L={w | w is of the form x01y, x and y any strings of 0s and 1s} represents","Language that can read the input (0+1)+|Accepts all strings of 0s and 1s that may not have 01|Accepts all and only strings that must have the sequence 01 somewhere|Accepts only 0s and 1s separately","C"],
+[4,"Regular expression for the given diagram (figure not clear in the scan)","aa*+bb*|a*+b*|a-kb|aba*","?"],
+[5,"A CFG is in Chomsky normal form if every production is of the form","A→BC or A→A|A→BC or A→a|A→BCa or B→b|A→BC or A→B","B"],
+[6,"A context free language is called ambiguous if","two or more leftmost derivations for some string|two or more rightmost derivations for some string|Both (A) and (B)|one leftmost derivation for some string","C"],
+[7,"Which statement is false","CFL can be converted into Chomsky normal form|CFL can be converted into Greibach normal form|CFL is accepted by pushdown automata|Above all the statements are false","D"],
+[8,"S→A111|S1, A→A0|00 is equivalent to (language is 0ⁿ1ᵐ with n≥2, m≥3; no option matches exactly)","{0ⁿ1ᵐ | n=2,m=3}|{0ⁿ1ᵐ | n=1,m=5}|{0ⁿ1ᵐ | n>2, m>4}|{0ⁿ1ᵐ | n>2, m<4}","?"],
+[9,"Pair with different expressive power","Deterministic FA and non-deterministic FA|Deterministic PDA and non-deterministic PDA|Deterministic single tape TM and non-deterministic single tape TM|Single tape TM and multiple tape TM","B"],
+[10,"Lexical analysis for a modern language such as Java needs the power of","Finite state automata|Deterministic pushdown automata|Non-deterministic pushdown automata|Turing machine","A"],
+[11,"Recognizing capability of NFSM and DFSM","is different|sometimes different|is the same|sometimes same","C"],
+[12,"Finite State Machine can recognize","any grammar|only CFG|any unambiguous grammar|only regular grammar","D"],
+[13,"FALSE statement","CFG can be used to specify both lexical and syntax rules|Type checking is done before parsing|High-level programs can be translated to different intermediate representations|Arguments to a function can be passed using the program stack","B"],
+[14,"Statement valid for the language (the language is not visible in the scan)","not accepted by a TM|regular but not CF|CF but not regular|neither regular nor CF, but accepted by a TM","?"],
+[15,"NOT a possible result of executing a TM on an input","may halt and accept|may halt by changing the input|may halt and reject|may never halt","B"],
+[16,"Why a Turing machine is more impressive than an FSM","head moves in one direction|head moves in both directions|head moves continued in both directions|TM can remember arbitrarily long sequences of the input string","D"],
+[17,"If a problem has an algorithm to answer it, we call it","Decidable|Solved|Recognizable|Decidable and solvable","A"],
+[18,"True for the Halting problem","It is recursively enumerable|It is undecidable|Both (a) and (b)|It is enumerable","C"],
+[19,"A language L is ___ if there is a TM M with L(M)=L and M halts at every point","Turing acceptable|Decidable|Undecidable|Turing unacceptable","B"],
+[20,"Problems with no algorithm, whether or not accepted by a TM that fails to halt on some input","Decidable|Undecidable|Computable|Decidable and Computable","B"]
+]}

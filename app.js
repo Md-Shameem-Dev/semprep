@@ -856,6 +856,85 @@
     ["revision", "Last-Minute"], ["tips", "Exam Tips"], ["resources", "Resources"]
   ];
 
+  /* Part A: MCQ sheet + quiz (guides that carry a `mcq` bank) */
+  const mcqShort = (l) => String(l).replace(/^PYQ /, "");
+  function mcqBody(m) {
+    const N = m.papers.length;
+    const rep = m.families.filter((f) => f.count >= 2).length;
+    return `
+      <p class="hint">Part A is 20 one-mark MCQs. ${m.questions.length} questions from ${N} papers are listed below, grouped into the topics that keep coming back. ${esc(m.note || "")}</p>
+      <h3 class="mcq-h">Last-minute MCQ sheet <span class="hint">— ${rep} repeating topics, most frequent first</span></h3>
+      <div class="grid-2">${m.families.map((f) => `
+        <div class="card mcq-fam" data-search>
+          <div class="fam-head"><h3>${esc(f.title)}</h3><span class="pill ${f.count / N >= 0.6 ? "hot" : f.count / N >= 0.4 ? "accent" : "info"}">${f.count}/${N} papers</span></div>
+          <p>${esc(f.tip)}</p>
+          <p class="hint">Asked in: ${esc(f.papers.map(mcqShort).join(", "))}</p>
+        </div>`).join("")}</div>
+      <h3 class="mcq-h" style="margin-top:22px">Practice quiz</h3>
+      <div class="mcq-bar">
+        <label>Show <select id="mcqMode" aria-label="Which questions">
+          <option value="recent">Last 2 papers (most likely to repeat)</option>
+          <option value="rep">Topics asked in 4+ papers</option>
+          <option value="all">All ${m.questions.length} questions</option></select></label>
+        <label>Unit <select id="mcqUnit" aria-label="Unit"><option value="0">All units</option>${m.units.map((u, i) => `<option value="${i + 1}">${i + 1}. ${esc(u)}</option>`).join("")}</select></label>
+        <label class="mcq-reveal"><input type="checkbox" id="mcqReveal"> Show answers</label>
+        <button class="btn" id="mcqReset" type="button">Restart</button>
+        <span class="pill" id="mcqScore">0 of 0 correct</span>
+      </div>
+      <div id="mcqList" class="mcq-list"></div>`;
+  }
+  function initMcq(m) {
+    const $mode = app.querySelector("#mcqMode"), $unit = app.querySelector("#mcqUnit"), $rev = app.querySelector("#mcqReveal");
+    const $list = app.querySelector("#mcqList"), $score = app.querySelector("#mcqScore");
+    const famCount = new Map(m.families.map((f) => [f.id, f.count]));
+    const N = m.papers.length;
+    let shown = [], done = new Map(); // question index -> chosen option
+    const L = "ABCD";
+    const cardHtml = (q, i) => {
+      const f = m.families.find((x) => x.id === q.fam);
+      return `<div class="mcq-q" data-i="${i}" data-search>
+        <div class="mcq-meta"><span class="pill">${esc(mcqShort(m.papers[q.p]))} · Q${q.n}</span><span class="pill">${esc(m.units[q.unit - 1] || "")}</span>${f ? `<span class="pill ${f.count / N >= 0.6 ? "hot" : "accent"}">${esc(f.title)} · ${f.count}/${N}</span>` : ""}${q.low ? `<span class="pill" title="Answer worked out by hand and less certain: check it in your notes">check answer</span>` : ""}</div>
+        <div class="mcq-stem">${esc(q.q)}</div>
+        <div class="mcq-opts">${q.o.map((o, k) => `<button type="button" class="mcq-opt" data-k="${k}"><b>${L[k]}</b><span>${esc(o)}</span></button>`).join("")}</div>
+        <div class="mcq-res" hidden></div>
+      </div>`;
+    };
+    const mark = (card, q, chosen, reveal) => {
+      card.querySelectorAll(".mcq-opt").forEach((b) => {
+        const k = +b.dataset.k;
+        b.classList.toggle("right", (chosen != null || reveal) && k === q.a);
+        b.classList.toggle("wrong", chosen != null && k === chosen && k !== q.a);
+      });
+      const $r = card.querySelector(".mcq-res");
+      $r.hidden = chosen == null && !reveal;
+      $r.textContent = chosen == null && !reveal ? "" : `${chosen != null ? (chosen === q.a ? "Correct. " : "Not quite. ") : ""}Answer: ${L[q.a]} — ${q.o[q.a]}${q.low ? " (less certain, verify)" : ""}`;
+    };
+    const draw = () => {
+      const mode = $mode.value, unit = +$unit.value;
+      shown = m.questions.map((q, i) => ({ q, i })).filter(({ q }) => (!unit || q.unit === unit) &&
+        (mode === "all" || (mode === "recent" && q.p >= N - 2) || (mode === "rep" && q.fam && famCount.get(q.fam) >= 4)));
+      // newest paper first, then by question number (already sorted); questions of one family are kept together in "rep"
+      if ($mode.value === "rep") shown.sort((a, b) => famCount.get(b.q.fam) - famCount.get(a.q.fam) || String(a.q.fam).localeCompare(String(b.q.fam)) || b.q.p - a.q.p || a.q.n - b.q.n);
+      done = new Map();
+      $list.innerHTML = shown.length ? shown.map(({ q, i }) => cardHtml(q, i)).join("") : `<p class="hint">No questions for this choice.</p>`;
+      if ($rev.checked) $list.querySelectorAll(".mcq-q").forEach((c) => mark(c, m.questions[+c.dataset.i], null, true));
+      score();
+    };
+    const score = () => { const r = [...done].filter(([i, k]) => m.questions[i].a === k).length; $score.textContent = `${r} of ${done.size} correct · ${shown.length} questions`; };
+    $list.addEventListener("click", (e) => {
+      const b = e.target.closest(".mcq-opt"); if (!b) return;
+      const card = b.closest(".mcq-q"), i = +card.dataset.i;
+      if (done.has(i)) return;
+      done.set(i, +b.dataset.k);
+      mark(card, m.questions[i], +b.dataset.k, $rev.checked);
+      score();
+    });
+    $rev.addEventListener("change", () => $list.querySelectorAll(".mcq-q").forEach((c) => { const i = +c.dataset.i; mark(c, m.questions[i], done.has(i) ? done.get(i) : null, $rev.checked); }));
+    [$mode, $unit].forEach((el) => el.addEventListener("change", draw));
+    app.querySelector("#mcqReset").addEventListener("click", draw);
+    draw();
+  }
+
   function renderGuide(id) {
     const g = getGuide(id);
     const isGen = !S.guides[id];
@@ -905,7 +984,7 @@
       </div>
 
       <nav class="g-nav" aria-label="Guide sections">
-        ${SECTIONS.map(([k, l]) => `<a href="#" data-jump="${k}">${l}</a>`).join("")}
+        ${(g.mcq ? [...SECTIONS.slice(0, 2), ["mcq", "MCQs"], ...SECTIONS.slice(2)] : SECTIONS).map(([k, l]) => `<a href="#" data-jump="${k}">${l}</a>`).join("")}
         <div class="g-tools">
           <input class="search" id="gSearch" type="search" placeholder="Search topics…" aria-label="Search this guide">
           <button class="btn" id="printBtn" title="Print or save as PDF">Print / PDF</button>
@@ -935,6 +1014,8 @@
             <tbody>${g.repeats.map((t) => `<tr data-search><td>${esc(t.name)}</td><td>${t.unit}</td><td><b>${t.papers.length}/${N}</b></td><td>${esc((t.marks || []).join("/"))}</td><td class="hint">${esc(t.papers.join(", "))}</td></tr>`).join("")}</tbody>
           </table></div>
         </details>` : ""}`)}
+
+      ${g.mcq ? sec("mcq", "A", "Part A — MCQs", mcqBody(g.mcq)) : ""}
 
       ${sec("units", "03", "Unit-wise Topic Analysis", g.units.map((u) => `
         <details class="unit" open>
@@ -998,6 +1079,8 @@
         <div class="grid-2">${res.map((r) => `<a class="card" href="${r.url}" target="_blank" rel="noopener" data-search><span class="pill">${esc(r.kind)}</span><h3 style="margin-top:8px">${esc(r.label)}</h3></a>`).join("")}</div>
         <p class="credit">${g.credit ? `Source analysis: ${g.sourceUrl ? `<a href="${g.sourceUrl}" target="_blank" rel="noopener">${esc(g.credit)}</a>` : esc(g.credit)}. ` : `AI-generated with ${esc(g.generated?.model || "Gemini")}. `}Question papers belong to their institution.</p>`)}
     `;
+
+    if (g.mcq) initMcq(g.mcq);
 
     /* progress */
     const keys = guideKeys(g);

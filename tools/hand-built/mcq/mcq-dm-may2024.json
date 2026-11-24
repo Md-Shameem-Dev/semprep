@@ -1,0 +1,22 @@
+{"paper":"May 2024","q":[
+[1,"A∩(B∪A) is","φ|A|B|Ā∩B","B"],
+[2,"R={(1,1),(1,3),(3,2),(3,4),(4,2)}, S={(2,1),(3,3),(3,4),(4,1)}: RoS is","{(1,3),(1,4),(3,1),(4,1)}|{(1,3),(3,3),(3,1),(4,1)}|{(1,3),(1,4),(3,1),(4,2)}|{(1,3),(1,4),(2,1),(3,4)}","A"],
+[3,"f:A→B and g:B→C bijective: (g∘f)⁻¹ is","f⁻¹∘g⁻¹|g⁻¹∘f⁻¹|f⁻¹∘g|g∘f⁻¹","A"],
+[4,"f(x)=2x+3, g(x)=3x+2: f∘g is","3x+7|6x+11|6x+7|3x+11","C"],
+[5,"a|c and b|c with gcd(a,b)=1 then","ab/c|c/ab (ab divides c)|c/a|c/b","B"],
+[6,"Ways to arrange 7 different beads in a necklace","250|300|360|350","C"],
+[7,"If gcd(a,b)=1 then gcd(ka,kb)=","1|k|2k|Does not exist","B"],
+[8,"Correct statement","lcm(−4,14)=28|lcm(−4,14)=−28|lcm(−4,14)=−56|lcm(−4,14)=−4","A"],
+[9,"Converse of ¬p→q","p→q|q→¬p|¬p→q|p→¬q","B"],
+[10,"Dual of (P∨Q)→R","(P∧Q)∧R|¬(P∨Q)→R|¬(P∧Q)∧R|(P∨Q)∧¬R","C"],
+[11,"Negation of 'I did not have strange dreams'","I have strange dreams|I have peaceful dreams|I have a dreamless sleep|I never sleep","A"],
+[12,"Which proposition is a tautology","(p∨q)→p|p∨(q→p)|p∨(p→q)|p→(p→q)","C"],
+[13,"If e₁,e₂ are two identity elements in a group (G,*)","e₁=0|e₂=0|e₁=e₂|e₁≠e₂","C"],
+[14,"Inverse of a in group with a*b=a+b+2","−a|a⁻¹|2|−(a+4)","D"],
+[15,"Every finite integral domain is a","Field|Ring|Integral domain|Group","A"],
+[16,"Hamming weight of x=111010","3|2|4|6","C"],
+[17,"Graph where loops and parallel edges are allowed","Pseudo|Multi|Simple|Bipartite","A"],
+[18,"Degree of v5 in the pendant-edge figure","3|2|1|0","C"],
+[19,"A connected graph without any circuit","Leaf|Flower|Loop|Tree","D"],
+[20,"Chromatic number of K4-like figure (4 vertices all mutually adjacent)","4|3|2|1","A"]
+]}

@@ -1,0 +1,22 @@
+{"paper":"Nov 2024","q":[
+[1,"f:A→B and g:B→C are bijections; g∘f is","a bijection|not a bijection|only injective|only surjective","A"],
+[2,"|A|=6, cardinality of power set of A","64|8|32|16","A"],
+[3,"M_R = M_Rᵀ, then the relation is","symmetric|reflexive|transitive|irreflexive","A"],
+[4,"Partition of A={1,2,3}","{{1,2},{1,3}}|{{1,2,3},{3}}|{{1},{2,3}}|{{1,2},{2,3}}","C"],
+[5,"Minimum persons to be sure at least two are born in the same month","12|13|24|25","B"],
+[6,"Ways to seat 7 persons round a table","120|720|540|480","B"],
+[7,"Every positive integer n>1 can be written uniquely as a product of","Positive integers|Perfect squares|Perfect cubes|Primes","D"],
+[8,"If a prime p divides a², then","p divides a|a divides p|p does not divide a|a does not divide p","A"],
+[9,"Converse of q→p","p→¬q|¬p→¬q|p→q|¬p→q","C"],
+[10,"Dual of Q∨F≡Q","Q∨T≡Q|Q∨F≡T|Q|Q∧T≡Q","D"],
+[11,"Set of premises is ____ if their conjunction implies a contradiction","Tautology|Inconsistent|Consistent|Universe of discourse","B"],
+[12,"p→(q→p) ≡","T|F|both T and F|neither T nor F","A"],
+[13,"Multiplicative group {1,−1,i,−i}: order of i","3|4|2|1","B"],
+[14,"Which statement is true","Every group is abelian|Every abelian group is cyclic|Every cyclic group is abelian|Every group is cyclic","C"],
+[15,"Every group of prime order is","not cyclic|cyclic|left coset|right coset","B"],
+[16,"Hamming distance between 11010 and 10101","1|2|3|4","D"],
+[17,"Simple graph with exactly one edge between each pair of distinct vertices","Regular|Bipartite|Complete|Pseudo","C"],
+[18,"A tree with 8 edges has","6 vertices|7 vertices|8 vertices|9 vertices","D"],
+[19,"Edges in complete graph K5","10|12|16|20","A"],
+[20,"Number of vertices of odd degree in an undirected graph is","Zero|One|Even|Odd","C"]
+]}

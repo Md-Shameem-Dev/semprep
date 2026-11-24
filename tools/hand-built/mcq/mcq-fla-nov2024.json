@@ -1,0 +1,22 @@
+{"paper":"Nov 2024","low":[3,6,11,13],"q":[
+[1,"S1: {0^(2n), n≥1} and S2: {0^m1^n0^q, m,n,q≥1} regular?","Only S1|Only S2|Both S1 and S2|Neither","C"],
+[2,"Important mechanism of finite automaton","Generation of sentences|Recognition of Languages|Grammar generation|Checking numerical values","B"],
+[3,"3 states, number of times R_ijk values calculated: find R33(3)","28|27|18|9","B"],
+[4,"A DFA transition function takes state and input symbol and returns a","Input symbol|State|Output|Value","B"],
+[5,"Language accepted by a Pushdown Automaton","Context Free|Regular|Recursive|Context aware","A"],
+[6,"Class of Context Free Grammar is not closed under","Concatenation|Intersection|Union|Minus","B"],
+[7,"L={a,b}*, X={aⁿbⁿ⁺², n>0}: L∪X and X are respectively","Regular, Regular|Not Regular, Not Regular|Not Regular, Regular|Regular, Not Regular","D"],
+[8,"Match Type 0,1,2,3 with Regular, CSG, Unrestricted, CFG","1-iii,2-ii,3-iv,4-i|1-iv,2-iii,3-ii,4-i|1-i,2-ii,3-iii,4-iv|1-ii,2-iii,3-iv,4-i","A"],
+[9,"Automaton with a stack as auxiliary storage","Finite automata|Pushdown automata|Deterministic automata|Linear bound automata","B"],
+[10,"Most suitable data structure for derivations in parsing","Queue|Linked List|Tree|Hash Tables","C"],
+[11,"A string is accepted by a PDA","Only when stack is empty|Only when it reaches the acceptance state|When both stack is empty and acceptance state reached|When it reaches the initial state","C"],
+[12,"Symbol z0 in PDA notation","An element of state|Initial stack symbol|Final state|Top stack alphabet","B"],
+[13,"Number of internal states of a Universal Turing Machine should be at least","1|2|3|4","B"],
+[14,"A Turing machine operates over","Infinite memory tape|Finite memory tape|No memory tape|Queue memory","A"],
+[15,"NOT performed by a TM after reading a symbol","Writes the symbol|Moves tape one cell left/right|Proceeds with next instruction or halts|Jumps n cells at a time","D"],
+[16,"Halting states of the Turing machine are","Start and stop|Accept and reject|Start and reject|Reject and allow","B"],
+[17,"If a problem has an algorithm to answer it, we call it","Decidable|Solved|Recognizable|Algorithmic","A"],
+[18,"Stages in the non-deterministic algorithm","3|1|2|5","C"],
+[19,"CNF-Satisfiability problem belongs to","NP class|P class|NP-Complete|NP-Hard","C"],
+[20,"Choice of polynomial class led to an extensive theory called","Computational complexity|Time complexity|Problem complexity|Decision complexity","A"]
+]}
