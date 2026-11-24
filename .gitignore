@@ -2,3 +2,4 @@
 saved/
 .vercel
 node_modules
+tools/hand-built/*-guide.json

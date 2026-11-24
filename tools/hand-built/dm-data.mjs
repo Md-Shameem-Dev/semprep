@@ -1,5 +1,6 @@
 // Discrete Mathematics (21MAB302T) — Part B / Part C questions from the papers on THE HELPER,
 // read by hand from the scanned PDFs. Entry: [number, marks, [topic ids], condensed text].
+// The Dec 2023 paper (old "any 4 of 6" format) is left out on purpose: only the current either/or format is counted.
 // "Important Topics.pdf" on THE HELPER is a student's topic list, used only as a hint for the guide.
 export const TOPICS = [
   ["D1", "Sets: identities, subsets and power sets", 1],
@@ -27,23 +28,12 @@ export const TOPICS = [
   ["D23", "Trees, graph colouring and planar graphs", 5]
 ];
 
-const P_OLD = "Part A 20×1 MCQ (OMR); Part B 4×10, answer any 4 of 6 (Q21–Q26); Part C 1×15, answer any 1 of Q27/Q28; 75 marks, 3 hours";
 const P_NEW = "Part A 20×1 MCQ (OMR); Part B 5×8 either/or, one per unit (Q21–Q25); Part C 1×15, answer any 1 of Q26/Q27; 75 marks, 3 hours";
 
-export const PATTERNS = { "PYQ Dec 2023": P_OLD };
+export const PATTERNS = {};
 export const DEFAULT_PATTERN = P_NEW;
 
 export const PAPERS = [
-  ["PYQ Dec 2023", [
-    ["21", 10, [4], "f: Z→N with f(x)=2x−1 for x>0 and −2x for x≤0: prove f is one-one and onto, and find f⁻¹"],
-    ["22", 10, [9], "Find integers m and n with 512m+320n=64 and state the Euclidean algorithm"],
-    ["23", 10, [16, 14], "Let G be the set of permutations on {1,2,3}: prove G is a group under composition"],
-    ["24", 10, [12], "Show that t∧s can be derived from p→q, q→¬r, r, p∨(t∧s)"],
-    ["25", 10, [15], "State and prove the necessary and sufficient condition for a subset to be a subgroup"],
-    ["26", 10, [19], "(a) State and prove the handshaking theorem and verify it on a given graph. (b) Define an Eulerian graph with an example"],
-    ["27", 15, [22], "Find the minimum spanning tree of the given weighted graph using Kruskal's algorithm"],
-    ["28", 15, [12], "Show that the set of statements (Rama gets his degree / job / married / higher studies) is inconsistent"]
-  ]],
   ["PYQ May 2024", [
     ["21a", 8, [1], "Prove the set identity A∩(B−C) = (A∩B)−(A∩C) both by Venn reasoning and analytically"],
     ["21b", 8, [3], "Draw the Hasse diagram of 'a divides b' on {1,…,8} from the digraph and prove it is a partial order"],
@@ -166,7 +156,7 @@ export function asExtraction() {
   return {
     topicList: TOPICS.map(([id, name, unit]) => ({ id, name, unit })),
     papers: PAPERS.map(([label, qs]) => {
-      const partCFrom = label === "PYQ Dec 2023" ? 27 : 26;
+      const partCFrom = 26;
       return {
         label, pattern: PATTERNS[label] || DEFAULT_PATTERN,
         questions: qs.map(([number, marks, ids, text]) => ({
