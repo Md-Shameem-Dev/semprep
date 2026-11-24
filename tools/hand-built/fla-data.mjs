@@ -169,7 +169,7 @@ export function asExtraction() {
   return {
     topicList: TOPICS.map(([id, name, unit]) => ({ id, name, unit })),
     papers: PAPERS.map(([label, qs]) => ({
-      label, pattern: PATTERN,
+      label, pattern: PATTERN, partBQuestions: 5, partBMarksEach: 8, partBEitherOr: "yes",
       questions: qs.map(([number, marks, ids, text]) => ({
         number, part: parseInt(number, 10) >= 26 ? "C" : "B", marks,
         unit: unitOf.get("K" + ids[0]) || unitOf.get(ids[0]) || 1,

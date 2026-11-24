@@ -158,7 +158,7 @@ export function asExtraction() {
     papers: PAPERS.map(([label, qs]) => {
       const partCFrom = 26;
       return {
-        label, pattern: PATTERNS[label] || DEFAULT_PATTERN,
+        label, pattern: PATTERNS[label] || DEFAULT_PATTERN, partBQuestions: 5, partBMarksEach: 8, partBEitherOr: "yes",
         questions: qs.map(([number, marks, ids, text]) => ({
           number, part: parseInt(number, 10) >= partCFrom ? "C" : "B", marks,
           unit: unitOf.get("D" + ids[0]) || 1,

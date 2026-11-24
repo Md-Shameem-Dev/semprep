@@ -646,8 +646,7 @@
           }
           // every attempted paper is passed in, so a failed group's papers show up as "couldn't read"
           const counted = G.tally(G.mergeBatches(okBatches.map((r) => r.raw), merged), allItems.map((p) => p.label));
-          if (!counted.read.length) throw new Error("Couldn't read any questions from the papers. Try again, or add clearer copies.");
-          input.tally = counted;
+          if (!counted.read.length) throw new Error("Couldn't read any questions from the papers. Try again, or add clearer copies.");          input.tally = counted;
           input.papers = counted.read.map((label) => ({ label })); // step 2 gets the counted table, not the PDFs again
           phase = "Step 2 of 2: writing the guide";
         } else {
@@ -891,7 +890,7 @@
         ${isGen ? `<div class="callout ${paperBased ? "" : "star"} gen-banner">
           <h4>${paperBased ? `Generated from ${N} past paper${N > 1 ? "s" : ""}` : "Syllabus-based guide — estimated"}</h4>
           <p class="saved-note">${justSaved === id ? "✓ Saved to <a href=\"#/guides\">My Guides</a> automatically." : "Saved in <a href=\"#/guides\">My Guides</a>."} Opens offline, on this device.</p>
-          <p>${paperBased && g.generated.method === "counted" ? `Every Part B/C question in ${esc(g.papers.join(", "))} was read and counted on ${fmtDate(g.generated.at)}, so the paper counts are exact. Open "See it in the papers" under any question to check it.${g.generated.unread && g.generated.unread.length ? ` <b>Couldn't read:</b> ${esc(g.generated.unread.join(", "))} — not counted.` : ""}` : paperBased ? `AI-analysed ${esc(g.papers.join(", "))} on ${fmtDate(g.generated.at)}. Counts are the AI's estimate — regenerate to get exact counts.` : `Made on ${fmtDate(g.generated.at)} from the official units without past papers, so priorities and probabilities are estimates. Add past papers to rebuild it from real exam evidence.`}</p>
+          <p>${paperBased && g.generated.method === "counted" ? `Every Part B/C question in ${esc(g.papers.join(", "))} was read and counted on ${fmtDate(g.generated.at)}, so the paper counts are exact. Open "See it in the papers" under any question to check it.${g.generated.unread && g.generated.unread.length ? ` <b>Couldn't read:</b> ${esc(g.generated.unread.join(", "))} — not counted.` : ""}${g.generated.excluded && g.generated.excluded.length ? ` <b>Left out (older exam format):</b> ${esc(g.generated.excluded.map((x) => x.label).join(", "))} — only papers in the current format are counted.` : ""}` : paperBased ? `AI-analysed ${esc(g.papers.join(", "))} on ${fmtDate(g.generated.at)}. Counts are the AI's estimate — regenerate to get exact counts.` : `Made on ${fmtDate(g.generated.at)} from the official units without past papers, so priorities and probabilities are estimates. Add past papers to rebuild it from real exam evidence.`}</p>
           <div class="row" style="margin-top:10px">
             <a class="btn primary" href="${regenUrl}">${paperBased ? "Regenerate / add papers" : "Add past papers"}</a>
             <button class="btn" id="dlBtn">Download guide file</button>
