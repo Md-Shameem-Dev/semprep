@@ -3499,6 +3499,7 @@ window.SEMPREP.guides["gen-21csc301t"] = {
         ],
         "a": 2,
         "unit": 4,
+        "low": 1,
         "fam": "H14"
       },
       {
@@ -3765,6 +3766,7 @@ window.SEMPREP.guides["gen-21csc301t"] = {
         ],
         "a": 1,
         "unit": 3,
+        "low": 1,
         "fam": "H6"
       },
       {
