@@ -7,7 +7,7 @@ import vm from "node:vm";
 
 const HERE = new URL(".", import.meta.url);
 const GUIDES = new URL("../../data/guides/", import.meta.url);
-const SHORT = { "May 2024": "M24", "Jul 2024": "J24", "Nov 2024": "N24", "May 2025": "M25", "Jul 2025": "J25", "Jul 2025 (Paper - 2)": "J25b", "Nov 2025": "N25", "May 2026": "M26", "Nov 2023": "N23" };
+const SHORT = { "Jan 2024": "Ja24", "May 2024": "M24", "Jul 2024": "J24", "Nov 2024": "N24", "May 2025": "M25", "Jul 2025": "J25", "Jul 2025 (Paper - 2)": "J25b", "Nov 2025": "N25", "May 2026": "M26", "Nov 2023": "N23" };
 
 // ---- families: [id, title, papers-agnostic member list, key facts] --------------------------------
 const FAMILIES = {
@@ -38,6 +38,26 @@ const FAMILIES = {
     ["G24", "Logic equivalences and inference", ["N25#9", "N25#11", "M26#10", "M26#11", "M26#12", "J24#10", "J24#12", "M24#11", "J25b#10", "N24#11"], "p→q ≡ ¬p∨q; p∧(p→q) ≡ p∧q; ¬(A∧B) ≡ ¬A∨¬B; absorption p∨(p∧q) ≡ p; inconsistent premises: their conjunction implies a contradiction; proof by contradiction is not a direct proof."],
     ["G25", "Relation x+y>10 on {3,4,5}", ["J24#4", "M25#3"], "No pair has x+y > 10, so R is the empty relation."]
   ],
+  cn: [
+    ["K1", "Subnet arithmetic", ["M26#5", "N25#5", "N25#6", "N25#7", "J25#5", "J25#6", "J25#7", "J25#8", "J25b#5", "J25b#6", "J25b#7", "J24#5", "J24#6", "J24#7", "J24#8", "Ja24#5", "Ja24#6", "Ja24#7", "Ja24#8", "N24#6", "M24#6", "M24#7", "Ja24#12", "J24#12"], "Usable hosts = 2^h − 2 (/26 → 62, /25 → 126, .240 → 14). Block = 256 − mask octet. Broadcast = all host bits 1 (192.168.1.255; 10.10.10.0/25 → .127; 132.168.16.4/20 → 132.168.31.255). 12 subnets of a Class C → 255.255.255.240. /23 into /27 → 16 subnets of 30 hosts. Class B = 16 network + 16 host bits; IPv4 ≈ 4 billion addresses."],
+    ["K2", "Invalid IPv4 addresses", ["M26#6", "N24#5"], "Leading zeros (045, 01), more than four octets, and any octet above 255 are all errors: all four given addresses are wrong."],
+    ["K3", "Mesh links", ["M26#3", "J24#3", "Ja24#3", "N24#1"], "Full mesh needs n(n−1)/2 links: 12 devices → 66, 6 devices → 15."],
+    ["K4", "OSI layer jobs", ["M26#2", "N25#3", "M24#3", "J24#1", "Ja24#1", "N24#4", "J25#4"], "Data link: framing and error detection (chunks are frames). Transport: process-to-process delivery. Presentation: encryption. Headers are added going down the stack."],
+    ["K5", "Routing protocols", ["M26#9", "M26#10", "M26#11", "N25#9", "N25#10", "N25#11", "J25#9", "J25#11", "J25#12", "J25b#9", "J25b#10", "J25b#11", "N24#9", "N24#10", "N24#11", "N24#12", "M24#9", "M24#10", "M24#11"], "Distance vector uses Bellman-Ford and talks to neighbours only; split horizon prevents loops. Link state floods LSAs and runs Dijkstra. BGP is path vector (EGP) and chooses by AS_PATH. EIGRP is Cisco, fast, metric bandwidth + delay. RIP max 15 hops; RIP v2 carries subnet information. A default route is used when nothing else matches."],
+    ["K6", "Transmission media", ["M26#4", "N25#4", "J25b#3", "M24#4", "J24#4", "Ja24#4"], "Optical fibre: light, highest bandwidth, immune to EMI. Coaxial: about 100 kHz to 500 MHz. Local telephone uses guided media."],
+    ["K7", "Telnet, ports and protocols", ["M26#20", "N24#20", "N25#19", "N25#20", "J25b#18", "J25#20", "M24#17", "M24#18", "J24#20", "Ja24#20"], "Telnet = remote login over TCP port 23. SMTP 25. Port addresses deliver to the right application; well-known ports (0–1023) identify servers. Email uses TCP."],
+    ["K8", "UDP for real time", ["M26#17", "N24#17", "J25b#17", "N25#17"], "Real-time apps (VoIP, video, gaming) use UDP, usually with RTP. UDP is the connectionless transport protocol."],
+    ["K9", "HTTP", ["M26#19", "N24#19", "J25#18", "J25b#19", "J25b#20"], "200 OK = success; GET requests data; HEAD gets only headers (metadata); a URL identifies and locates a resource."],
+    ["K10", "CSMA", ["M26#13", "N24#13", "N25#13", "M24#13", "J25b#15"], "CSMA = sense before transmit. CSMA/CD on collision: stop, send a jam signal, wait a random backoff. CSMA/CA avoids collisions; RTS/CTS fixes the hidden terminal problem."],
+    ["K11", "ARQ and sliding window", ["M26#14", "N24#16", "J25#15", "J25#16", "J25b#14", "M24#14", "M24#15", "J24#13", "Ja24#13", "Ja24#14"], "Sliding window sends several frames before an ACK; Stop-and-Wait has one in transit. Window n−1 → n−1 frames outstanding. Selective repeat window ≤ 2^(n−1). Flow control prevents receiver-buffer overflow. Sliding window works in full duplex."],
+    ["K12", "HDLC", ["M26#15", "N25#14", "M24#16", "J25b#16"], "High-level Data Link Control is bit-oriented; flag 01111110 marks the start and end of a frame; I-frames carry user data."],
+    ["K13", "Error detection and correction", ["M26#16", "N25#16", "J25#13", "J25#14", "J25b#13", "N24#15", "J24#17", "Ja24#17"], "CRC is modulo-2 division; (1+x) as a factor of G(x) detects odd numbers of errors. Hamming codes correct single-bit errors only. Wrong parity → error detected. Hamming distance 101010 vs 100100 = 3."],
+    ["K14", "Email and DNS", ["M26#18", "N25#18", "J25#17", "M24#20"], "SMTP sends; POP3/IMAP retrieve. DNS resolves names to IP addresses; an authoritative server stores a domain's records."],
+    ["K15", "TCP", ["J25#19", "N24#18", "J24#9", "Ja24#9", "J24#18", "Ja24#18", "J24#19", "Ja24#19"], "TCP is reliable: it retransmits lost packets. Packets of the same session may take different paths in both TCP and UDP. connect() succeeds once listen() has run, even before accept()."],
+    ["K16", "Network devices and types", ["M26#1", "M26#8", "N25#1", "N25#2", "N25#8", "J25b#1", "J25b#8", "N24#3", "N24#8", "M24#1", "M24#5", "M24#8", "J24#10", "Ja24#10", "J24#11", "Ja24#11"], "Hub = multiport repeater (physical layer). Bridge = 2-port, data link, spanning tree avoids loops. Router: network layer, holds the NAT table. Gateway works at all layers. Repeater regenerates. ARP finds the MAC address for an IP. Home = LAN (or PAN), cable TV = MAN."],
+    ["K17", "Topologies and switching", ["J24#2", "Ja24#2", "J25#2", "J25#3", "J25b#4", "M24#2", "N24#2"], "Token → ring topology. Central device → star. Circuit switching uses TDM and is always available end to end. Monitor and computer use simplex."],
+    ["K18", "IPv6", ["M26#12", "N25#12", "J25#10", "J25b#12"], "128-bit addresses; ::1 loopback; supports unicast, multicast and anycast; 2001:db8::1 and 2001:db8:0:0:0:0:0:1 are both valid."]
+  ],
   fla: [
     ["H1", "Halting states of a TM", ["J25b#16", "N24#16", "J25#15"], "Halting states are accept and reject."],
     ["H2", "L and its complement both RE", ["J24#17", "J25#19", "M26#17"], "If L and L̄ are recursively enumerable then L is recursive."],
@@ -60,6 +80,11 @@ const FAMILIES = {
 };
 // The topic chip on each question = syllabus unit
 const UNIT_RULES = {
+  cn: [[5, /tcp|udp|port|http|smtp|pop3|imap|dns|email|telnet|rtp|url|application|connect\(|transport layer/i],
+       [4, /csma|aloha|hdlc|arq|window|hamming|crc|parity|frame|token bucket|token ring|flow control|collision|silly/i],
+       [3, /rout|rip|ospf|bgp|eigrp|dijkstra|bellman|link-state|link state|ipv6|egp|spanning tree|subnet-zero/i],
+       [2, /ip address|subnet|mask|class|broadcast|ipv4|addresses|\bnat\b|\/2[0-9]|arp/i],
+       [1, /./]],
   dm: [[5, /graph|vertex|vertices|\btree|edges|degree|chromatic|euler|circuit|bipartite|colour|handshaking|k₅|k₉|k4|k5|k9|hamilton/i],
        [4, /group|subgroup|cyclic|integral domain|identity element|hamming|code|parity|order of|α=|inverse of p=|sₙ|s₃|ring/i],
        [3, /dual|tautolog|converse|inverse of '|contrapositive|premise|inference|logical|negation|symbolic|absorption|induction|inconsistent|proof|→|rule p|disjunctive|¬/i],
@@ -71,7 +96,7 @@ const UNIT_RULES = {
         [2, /grammar|cfg|cnf|greibach|parse|ambiguous|derivation|yield|production|context|chomsky|type [0-3]|nullable|null production|\bcfl\b/i],
         [1, /./]]
 };
-const UNIT_NAMES = { dm: ["Sets, relations, functions", "Counting and number theory", "Logic and proof", "Groups and coding", "Graphs"], fla: ["Finite automata and regex", "Grammars", "Pushdown automata", "Turing machines", "Complexity and decidability"] };
+const UNIT_NAMES = { cn: ["Introduction to networks", "Addressing", "Routing", "Medium access control", "Transport and application"], dm: ["Sets, relations, functions", "Counting and number theory", "Logic and proof", "Groups and coding", "Graphs"], fla: ["Finite automata and regex", "Grammars", "Pushdown automata", "Turing machines", "Complexity and decidability"] };
 // questions to leave out of the quiz (answer not readable from the scan, or the scan's figure is needed)
 const SKIP = { dm: ["M24#18"], fla: ["J25#2", "J25#5", "J25#7", "N23#4", "N23#8", "N23#14"] };
 const DM_LOW = ["M26#11", "M26#15", "M25#11", "M25#20", "J24#11", "J25#11"];
@@ -101,7 +126,7 @@ function build(subj, guideFile, guideId, extraFilter) {
   for (const [fid, , members] of fams) for (const m of members) { if (famOf.has(m) && famOf.get(m) !== fid) problems.push(`${m} is in ${famOf.get(m)} and ${fid}`); famOf.set(m, fid); }
   const papers = [...new Set(all.map((x) => x.paper))];
   // order papers oldest -> newest
-  const order = ["Nov 2023", "May 2024", "Jul 2024", "Nov 2024", "May 2025", "Jul 2025", "Jul 2025 (Paper - 2)", "Nov 2025", "May 2026"];
+  const order = ["Nov 2023", "Jan 2024", "May 2024", "Jul 2024", "Nov 2024", "May 2025", "Jul 2025", "Jul 2025 (Paper - 2)", "Nov 2025", "May 2026"];
   papers.sort((a, b) => order.indexOf(a) - order.indexOf(b));
   const paperLabel = (p) => "PYQ " + p;
   const unitOf = (x) => UNIT_RULES[subj].find(([, re]) => re.test(x.q))[0];
@@ -133,3 +158,4 @@ function build(subj, guideFile, guideId, extraFilter) {
 
 build("dm", "gen-discrete-mathematics.js", "gen-discrete-mathematics");
 build("fla", "gen-21csc301t.js", "gen-21csc301t");
+build("cn", "gen-21csc302j.js", "gen-21csc302j");
