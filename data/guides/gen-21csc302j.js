@@ -3514,6 +3514,7 @@ window.SEMPREP.guides["gen-21csc302j"] = {
         ],
         "a": 3,
         "unit": 1,
+        "low": 1,
         "fam": "K17"
       },
       {
@@ -3667,7 +3668,7 @@ window.SEMPREP.guides["gen-21csc302j"] = {
           "0010",
           "1101"
         ],
-        "a": 0,
+        "a": 3,
         "unit": 4,
         "fam": "K13"
       },
